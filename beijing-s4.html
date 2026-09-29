@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2027 RICH Beijing Summer Camp | Beijing Session 4 · 北京与草原 · 探索辽阔中国</title>
+<meta name="description" content="22 July–6 August 2027. A 16-day RICH summer in Beijing and Inner Mongolia: Chinese lessons, one-to-one tutoring, teacher-led language quests, the Great Wall, desert adventures and grassland friendships. 北京第四期：从北京故事走向沙漠与草原。">
+<meta name="theme-color" content="#1A2E44">
+<meta property="og:type" content="website"><meta property="og:title" content="RICH 2027 · Beijing Session 4 · 北京第四期 · 北京与草原 · 探索辽阔中国">
+<meta property="og:description" content="From Beijing stories to wide-open horizons. 22 July–6 August 2027 · 16 days · 北京入营，返京离营。">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Montserrat:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;family=Noto+Serif+SC:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+        :root {
+            /* 🔵 经典学院蓝 (Foundation, Empathy & Input) */
+            --primary-navy: #1A2E44;      
+            /* 🔴 高光常春藤红 (Breakthrough, Courage & Output) */
+            --accent-crimson: #8C2131;    
+            --bg-page: #FDFBF7;           
+            --bg-gray: #F4F4F5;           
+            --text-dark: #1F2937;         
+            --text-muted: #828A95;        
+            --border-light: #E5E7EB;
+            
+            --font-serif-en: 'Cormorant Garamond', serif;
+            --font-serif-zh: 'Noto Serif SC', serif;
+            --font-sans-en: 'Montserrat', sans-serif;
+            --font-sans-zh: 'Noto Sans SC', sans-serif;
+        }
+
+        body {
+            background-color: #E2E8F0;
+            margin: 0;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .page {
+            max-width: 210mm; 
+            margin: 0 auto 40px auto;
+            background-color: var(--bg-page);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .brochure-header {
+            background-color: var(--primary-navy);
+            color: white;
+            padding: 60px 50px;
+            text-align: center;
+            position: relative;
+            border-bottom: 6px solid var(--accent-crimson);
+        }
+
+        .header-title-en {
+            font-family: var(--font-serif-en);
+            font-size: 40px; 
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin: 0 0 5px 0;
+            text-transform: uppercase;
+        }
+
+        .header-location-en {
+            font-family: var(--font-serif-en);
+            font-size: 30px;
+            font-weight: 500;
+            font-style: italic;
+            color: #E5E7EB;
+            letter-spacing: 2px;
+            margin: 0 0 12px 0;
+        }
+
+        .header-title-zh {
+            font-family: var(--font-serif-zh);
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 6px;
+            margin: 0 0 25px 0;
+            color: rgba(255,255,255,0.6);
+        }
+
+        .header-meta {
+            display: inline-block;
+            font-family: var(--font-sans-en);
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            border: 1px solid rgba(255,255,255,0.4);
+            background: rgba(255,255,255,0.05);
+        }
+
+        .content-wrap {
+            padding: 50px;
+        }
+
+        .day-module {
+            margin-bottom: 45px;
+            page-break-inside: avoid;
+        }
+
+        .day-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid var(--primary-navy);
+            padding-bottom: 12px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .day-header.highlight {
+            border-bottom-color: var(--accent-crimson);
+        }
+
+        .date-box {
+            background-color: var(--primary-navy);
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            margin-right: 25px;
+            min-width: 85px; 
+            transition: all 0.3s ease;
+        }
+
+        .day-header.highlight .date-box {
+            background-color: var(--accent-crimson);
+        }
+
+        .date-day {
+            font-family: var(--font-sans-en);
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+            display: block;
+            opacity: 0.9;
+        }
+
+        .date-num {
+            font-family: var(--font-serif-en);
+            font-size: 32px; 
+            font-weight: 700;
+            line-height: 1;
+            display: block;
+        }
+
+        .date-month {
+            font-family: var(--font-sans-en);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 5px;
+            display: block;
+        }
+
+        .day-title-wrap {
+            flex-grow: 1;
+        }
+
+        .day-title-en {
+            font-family: var(--font-serif-en);
+            font-size: 26px; 
+            font-weight: 600;
+            color: var(--primary-navy);
+            margin: 0 0 4px 0;
+            transition: color 0.3s ease;
+        }
+
+        .day-title-zh {
+            font-family: var(--font-serif-zh);
+            font-size: 14px; 
+            color: var(--text-muted);
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .day-header.highlight .day-title-en {
+            color: var(--accent-crimson);
+        }
+
+        .schedule-row {
+            display: flex;
+            padding: 16px 12px; 
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .schedule-row:nth-child(even) {
+            background-color: var(--bg-gray);
+        }
+
+        .schedule-row:last-child {
+            border-bottom: none;
+        }
+
+        .time-col {
+            width: 125px; 
+            flex-shrink: 0;
+            font-family: var(--font-sans-en);
+            font-size: 13px; 
+            font-weight: 500; 
+            color: var(--primary-navy);
+            letter-spacing: 0.5px;
+            padding-top: 2px;
+        }
+
+        .text-col {
+            flex-grow: 1;
+            padding-left: 10px;
+        }
+
+        .en-text {
+            font-family: var(--font-sans-en);
+            font-size: 14.5px; 
+            font-weight: 400; /* 去除加粗，保持克制调性 */
+            color: var(--text-dark);
+            line-height: 1.6;
+            margin-bottom: 6px;
+        }
+
+        .zh-text {
+            font-family: var(--font-sans-zh);
+            font-size: 12px;
+            font-weight: 300; /* 去除加粗，保持克制调性 */
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+        
+        .highlight-text-en {
+            color: var(--accent-crimson);
+            font-weight: 500; /* 仅保留颜色高亮，去除原本的 600 加粗 */
+        }
+
+        .brochure-footer {
+            background-color: var(--bg-page);
+            padding: 40px 0 60px 0;
+            text-align: center;
+        }
+
+        .footer-website {
+            font-family: var(--font-sans-en);
+            font-size: 15px;
+            font-weight: 400;
+            color: var(--primary-navy);
+            text-decoration: none;
+            letter-spacing: 2px;
+            text-transform: lowercase; 
+            transition: color 0.3s ease;
+            position: relative;
+            padding-bottom: 4px;
+        }
+        
+        .footer-website::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent-crimson);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .footer-website:hover { color: var(--accent-crimson); }
+        .footer-website:hover::after { transform: scaleX(1); }
+
+        @media print {
+            body { background: none; padding: 0; }
+            .page { box-shadow: none; max-width: 100%; margin-bottom: 0; }
+            .page-break { page-break-before: always; }
+        }
+    
+        /* 2027 additions: preserve the 2026 brochure system. */
+        :root { --font-serif-en: 'Cormorant Garamond', Georgia, serif; --font-serif-zh: 'Noto Serif SC', 'Songti SC', serif; --font-sans-en: 'Montserrat', Arial, sans-serif; --font-sans-zh: 'Noto Sans SC', 'PingFang SC', sans-serif; --text-muted:#69727f; }
+        * { box-sizing:border-box; }
+        html { scroll-behavior:smooth; }
+        .preview-bar { max-width:210mm; margin:0 auto 16px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; color:var(--primary-navy); font:12px var(--font-sans-en); }
+        .preview-label { font-family:var(--font-sans-zh); }
+        .preview-links { display:flex; align-items:center; gap:18px; }
+        .preview-links a,.print-button { color:inherit; text-decoration:none; background:none; border:0; font:inherit; padding:7px 0; cursor:pointer; }
+        .preview-links a:hover,.print-button:hover { color:var(--accent-crimson); }
+        a:focus-visible,button:focus-visible { outline:2px solid var(--accent-crimson); outline-offset:5px; }
+        .header-meta { line-height:1.8; letter-spacing:1.7px; }
+        .method-intro { margin:0 0 42px; padding-bottom:30px; border-bottom:1px solid var(--border-light); }
+        .eyebrow { font:600 10px var(--font-sans-en); letter-spacing:2px; color:var(--accent-crimson); margin:0 0 12px; text-transform:uppercase; }
+        .method-intro h2 { font:600 29px/1.2 var(--font-serif-en); color:var(--primary-navy); margin:0 0 14px; }
+        .method-intro .en-text { font-size:13px; }
+        .method-intro .zh-text { font-size:12px; font-weight:400; }
+        .rhythm { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin:23px 0; }
+        .rhythm-item { border-top:2px solid var(--primary-navy); padding-top:10px; }
+        .rhythm-item:last-child { border-color:var(--accent-crimson); }
+        .rhythm-item b { display:block; font:600 11px/1.6 var(--font-sans-en); color:var(--primary-navy); }
+        .rhythm-item span { display:block; font:12px/1.7 var(--font-sans-zh); color:var(--text-muted); }
+        .draft-note { font:11px/1.8 var(--font-sans-zh); color:var(--text-muted); margin:20px 0 0; }
+        .city-heading { scroll-margin-top:20px; display:flex; align-items:baseline; justify-content:space-between; gap:14px; margin:8px 0 30px; padding-bottom:14px; border-bottom:1px solid var(--border-light); }
+        .city-heading h2 { font:600 30px var(--font-serif-en); color:var(--primary-navy); margin:0; }
+        .city-heading span { font:11px var(--font-sans-en); color:var(--text-muted); letter-spacing:1px; }
+        #beijing { margin-top:60px; }
+        .day-title-wrap,.text-col { min-width:0; }
+        .day-number { display:block; font:600 9px var(--font-sans-en); letter-spacing:1.5px; margin-bottom:5px; opacity:.75; }
+        .time-col { width:110px; font-size:11px; line-height:1.6; }
+        .time-col span { display:block; font:11px/1.6 var(--font-sans-zh); margin-top:4px; color:var(--text-muted); }
+        .zh-text { font-weight:400; line-height:1.75; }
+        .quest-row { border-left:3px solid var(--accent-crimson); background:#f5eeee !important; padding-left:9px; }
+        .quest-row .time-col { color:var(--accent-crimson); }
+        .quest-name { display:block; font-weight:600; margin-bottom:5px; }
+        .dining-name { display:block; font-weight:500; margin-bottom:4px; }
+        .programme-notes { margin-top:25px; padding-top:25px; border-top:1px solid var(--border-light); }
+        .programme-notes .en-text { font-size:12px; }
+        .programme-notes a { color:var(--primary-navy); text-underline-offset:3px; }
+        .source-links { font:11px/2 var(--font-sans-zh); margin-top:16px; }
+        .source-links a { margin-right:12px; }
+        @media(max-width:600px) {
+          body { padding:14px 10px; }
+          .preview-bar { padding:0 4px; font-size:11px; }
+          .preview-links { gap:15px; }
+          .brochure-header { padding:35px 20px; }
+          .header-title-en { font-size:29px; letter-spacing:.5px; }
+          .header-location-en { font-size:27px; margin-top:10px; }
+          .header-title-zh { font-size:12px; letter-spacing:2px; line-height:1.8; margin-bottom:19px; }
+          .header-meta { padding:8px 10px; font-size:10px; letter-spacing:1px; }
+          .content-wrap { padding:28px 20px; }
+          .method-intro h2 { font-size:26px; }
+          .rhythm { gap:10px; }
+          .rhythm-item b { font-size:10px; }
+          .rhythm-item span { font-size:11px; }
+          .day-module { margin-bottom:34px; }
+          .day-header { align-items:flex-start; padding-bottom:10px; }
+          .date-box { min-width:65px; width:65px; padding:9px 6px; margin-right:14px; }
+          .date-num { font-size:29px; }
+          .date-day,.date-month { font-size:9px; }
+          .day-title-en { font-size:24px; line-height:1.15; }
+          .day-title-zh { font-size:12px; line-height:1.7; letter-spacing:.3px; margin-top:6px; }
+          .schedule-row { padding:13px 9px; }
+          .time-col { width:75px; font-size:10px; }
+          .text-col { padding-left:8px; }
+          .en-text { font-size:12px; line-height:1.7; }
+          .zh-text { font-size:11.5px; }
+          .quest-row { padding-left:6px; }
+          .city-heading h2 { font-size:27px; }
+          .city-heading span { font-size:9px; letter-spacing:.2px; }
+          .brochure-footer { padding:15px 0 35px; }
+        }
+        @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } * { transition:none !important; } }
+        @media print {
+          @page { size:A4; margin:13mm; }
+          .preview-bar { display:none; }
+          .brochure-header { padding:24px; print-color-adjust:exact; -webkit-print-color-adjust:exact; }
+          .content-wrap { padding:25px 0; }
+          .day-module { break-inside:avoid; margin-bottom:24px; }
+          .date-box,.quest-row,.schedule-row { print-color-adjust:exact; -webkit-print-color-adjust:exact; }
+          .city-heading { break-after:avoid; }
+          #beijing { break-before:page; margin-top:0; }
+          .en-text { font-size:11px; }
+          .zh-text { font-size:10px; }
+          .schedule-row { padding:9px; }
+          .day-title-en { font-size:24px; }
+          .brochure-footer { padding:12px 0; }
+        }
+
+/* RICH 2027: an accessible, self-contained edition of the retained brochure. */
+body { color:var(--text-dark); }
+p { margin-top:0; }
+.en-text { margin:0 0 7px; }
+.zh-text { margin:0; font-size:13px; color:#626d7a; }
+.preview-bar { position:sticky; top:0; z-index:10; padding:12px 0; background:#e2e8f0f5; margin-bottom:12px; }
+.preview-label { font:600 11px/1.5 var(--font-sans-en); letter-spacing:1.2px; }
+.preview-links { gap:18px; }
+.preview-links a,.print-button { padding:8px 0; }
+.skip-link { position:absolute; left:12px; top:-100px; background:white; color:var(--primary-navy); padding:12px; z-index:20; }
+.skip-link:focus { top:12px; }
+.brochure-header { padding:46px 40px 38px; }
+.header-title-en { font-size:31px; line-height:1.2; }
+.header-location-en { font-size:39px; line-height:1.2; margin:12px 0; }
+.header-title-zh { color:#d9e1e8; font-size:16px; letter-spacing:3px; margin-bottom:22px; }
+.header-route { font:11px/1.9 var(--font-sans-en); color:#dce2e8; margin:18px 0 0; letter-spacing:.4px; }
+.header-route span { display:block; font-family:var(--font-sans-zh); font-size:12px; }
+.header-route .header-date { white-space:nowrap; }
+.content-wrap { padding:40px 44px; }
+.method-intro { margin-bottom:30px; padding-bottom:0; border:0; }
+.method-intro h2 { font-size:31px; margin-bottom:7px; }
+.section-title-zh { margin:0 0 18px; font:500 17px/1.7 var(--font-serif-zh); color:var(--primary-navy); }
+.method-intro .en-text { font-size:14px; }
+.method-intro .zh-text { font-size:13px; }
+.rhythm-section { scroll-margin-top:90px; padding:24px 0 28px; border-block:1px solid var(--border-light); margin:28px 0; }
+.section-heading { font:600 26px/1.2 var(--font-serif-en); color:var(--primary-navy); margin:0 0 5px; }
+.rhythm-intro { margin-bottom:18px; }
+.daily-timeline { list-style:none; margin:0 0 21px; padding:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px 20px; }
+.daily-timeline li { border-top:2px solid #cbd2d9; padding-top:10px; min-width:0; }
+.daily-timeline li.coaching { border-color:var(--accent-crimson); }
+.daily-timeline li.rest { grid-column:1 / -1; display:flex; flex-wrap:wrap; gap:5px 18px; align-items:baseline; }
+.method-detail .zh-text + .en-text { margin-top:18px; }
+.daily-timeline .clock { display:block; color:var(--primary-navy); font:600 17px/1.4 var(--font-serif-en); white-space:nowrap; }
+.daily-timeline .event-en { display:block; margin-top:4px; font:500 11.5px/1.7 var(--font-sans-en); color:var(--text-dark); }
+.daily-timeline .event-zh { display:block; font:12px/1.8 var(--font-sans-zh); color:var(--text-muted); }
+.method-detail { padding:2px 0 24px; }
+.method-detail .en-text,.dining-intro .en-text { font-size:13px; }
+.dining-intro { padding-bottom:27px; margin-bottom:38px; border-bottom:1px solid var(--border-light); }
+.dining-intro .eyebrow,.method-detail .eyebrow { margin-bottom:10px; }
+.dining-intro .menu-note { margin-top:12px; }
+.menu-note .en-text,.menu-note .zh-text { font-size:11.5px; }
+.city-heading { margin:0 0 25px; scroll-margin-top:85px; flex-wrap:wrap; }
+.city-heading h2 { font-size:32px; }
+.city-heading h2 span { font-family:var(--font-serif-zh); font-size:17px; margin-left:8px; }
+.city-heading p { flex-basis:100%; font:13px/1.8 var(--font-sans-zh); color:var(--text-muted); margin:0; }
+.city-heading .city-tag-en { font:12px/1.7 var(--font-sans-en); margin-top:4px; }
+#beijing { margin-top:0; }
+#inner-mongolia { margin-top:50px; }
+.day-module { scroll-margin-top:86px; margin-bottom:38px; }
+.day-title-en { font-size:28px; line-height:1.18; }
+.day-title-zh { font-size:14px; letter-spacing:.4px; line-height:1.7; }
+.date-box { min-width:82px; margin-right:21px; }
+.schedule-row { padding:15px 12px; }
+.time-col { width:105px; }
+.schedule-row.coaching-row .time-col { color:var(--accent-crimson); }
+.time-col span { color:#65707e; }
+.quest-name { font-weight:600; }
+.dining-row { background:#f6f3ed !important; }
+.dining-name { font-weight:600; }
+.programme-notes { margin-top:8px; }
+.enquiry { margin-top:30px; padding:27px 0 8px; border-top:1px solid var(--border-light); text-align:center; scroll-margin-top:90px; }
+.enquiry h2 { font:600 29px/1.2 var(--font-serif-en); color:var(--primary-navy); margin:0 0 10px; }
+.enquiry .zh-text { margin-bottom:20px; }
+.enquiry-link { display:inline-block; color:white; background:var(--accent-crimson); text-decoration:none; padding:13px 22px; font:500 12px/1.8 var(--font-sans-en); }
+.enquiry-link span { display:block; font:12px/1.6 var(--font-sans-zh); }
+.enquiry-link:hover { background:#701827; }
+.brochure-footer { padding:0 20px 38px; }
+.footer-note { font:10px/1.8 var(--font-sans-en); color:var(--text-muted); margin-top:12px; }
+@media(max-width:600px) {
+  body { padding:0 8px 18px; }
+  .preview-bar { padding:10px 8px; gap:3px; }
+  .preview-label { font-size:10px; }
+  .preview-links { width:100%; justify-content:space-between; gap:10px; font-size:10.5px; }
+  .brochure-header { padding:32px 18px; }
+  .header-title-en { font-size:24px; }
+  .header-location-en { font-size:32px; }
+  .header-title-zh { font-size:13px; letter-spacing:1.3px; }
+  .header-meta { font-size:9.5px; letter-spacing:.6px; }
+  .header-route { font-size:10px; }
+  .content-wrap { padding:29px 19px; }
+  .method-intro h2 { font-size:27px; }
+  .section-title-zh { font-size:16px; }
+  .daily-timeline { grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px 20px; }
+  .daily-timeline li.wide { grid-column:1 / -1; }
+  .daily-timeline .clock { font-size:19px; }
+  .daily-timeline .event-en { font-size:11px; }
+  .daily-timeline .event-zh { font-size:12px; }
+  .day-title-en { font-size:25px; }
+  .day-title-zh { font-size:13px; }
+  .date-box { margin-right:13px; min-width:62px; width:62px; }
+  .schedule-row { display:block; padding:13px 10px; }
+  .time-col { width:auto; display:flex; flex-wrap:wrap; gap:8px; align-items:baseline; margin-bottom:7px; font-weight:600; font-size:10.5px; }
+  .time-col span { display:inline; margin:0; font-size:11px; font-weight:400; }
+  .text-col { padding-left:0; }
+  .en-text { font-size:13px; line-height:1.65; }
+  .zh-text { font-size:12.5px; line-height:1.8; }
+  .quest-row { padding-left:10px; }
+  .city-heading { gap:5px 12px; }
+  .city-heading h2 { font-size:30px; }
+  .city-heading>span { font-size:9px; }
+  .enquiry h2 { font-size:27px; }
+}
+@media print {
+  .preview-bar,.skip-link,.enquiry { display:none !important; }
+  body { padding:0; }
+  .page { margin:0; }
+  .brochure-header { padding:24px; }
+  .content-wrap { padding:23px 0; }
+  #beijing { break-before:auto; margin-top:20px; }
+  #inner-mongolia { break-before:page; margin-top:0; }
+  .day-module { break-inside:avoid; }
+  .daily-timeline { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .day-header { break-after:avoid; }
+  .schedule-row { display:flex; padding:8px; }
+  .time-col { display:block; width:95px; margin:0; }
+  .time-col span { display:block; }
+  .text-col { padding-left:8px; }
+  .en-text { font-size:11px; }
+  .zh-text { font-size:10px; }
+  .dining-row { print-color-adjust:exact; -webkit-print-color-adjust:exact; }
+}
+
+#return-beijing { margin-top:50px; }
+@media print { #return-beijing { break-before:page; margin-top:0; } }
+#top { scroll-margin-top: 90px; }
+@media(max-width:360px) { .preview-links { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 10px; } .preview-links a,.print-button { white-space:nowrap; text-align:left; } #top,.city-heading,.day-module,.rhythm-section,.enquiry { scroll-margin-top:120px; } }
+
+/* Return links to the eight-session overview. */
+.hub-return { max-width:210mm; margin:0 auto 10px; color:var(--primary-navy); font:12px/1.8 var(--font-sans-en), var(--font-sans-zh); }
+.hub-return span { font-family:var(--font-sans-zh); }
+.hub-return a { display:inline-block; padding:6px 0; color:inherit; text-decoration:none; }
+.hub-return a:hover { color:var(--accent-crimson); text-decoration:underline; text-underline-offset:4px; }
+.brochure-footer .hub-return { margin:18px auto 0; }
+@media(max-width:600px) { .hub-return { padding:5px 8px 0; font-size:11px; } }
+@media print { .hub-return { display:none !important; } }
+</style></head><body>
+<a class="skip-link" href="#beijing">Skip to the itinerary · 跳转每日行程</a>
+<nav class="hub-return" aria-label="All sessions"><a href="index.html#beijing">← All sessions · <span lang="zh-CN">返回八期总览</span></a></nav>
+<nav class="preview-bar" aria-label="Itinerary navigation"><span class="preview-label">RICH · SUMMER 2027 · BEIJING SESSION 04</span><div class="preview-links"><a href="#daily-rhythm">Our day 一天</a><a href="#beijing">Beijing 北京</a><a href="#inner-mongolia">Inner Mongolia 内蒙古</a><button class="print-button" type="button" id="print-itinerary">Print 打印</button></div></nav>
+<main class="page" id="top"><header class="brochure-header"><h1 class="header-title-en">2027 RICH Summer Camp in China</h1><p class="header-location-en">Beijing to Inner Mongolia</p><p class="header-title-zh" lang="zh-CN">北京第四期 · 北京与草原 · 探索辽阔中国</p><div class="header-meta">BEIJING SESSION 4 | JUL 22 — AUG 06, 2027 | 16 DAYS</div><p class="header-route">Arrive in Beijing · Depart from Beijing<span lang="zh-CN">北京入营 · 返京离营 · <time class="header-date" datetime="2027-07-22">2027年7月22日至8月6日</time></span></p></header>
+<div class="content-wrap"><section class="method-intro" aria-labelledby="method-title"><p class="eyebrow">The RICH Summer</p><h2 id="method-title">From Beijing stories to wide-open horizons.</h2><p class="section-title-zh" lang="zh-CN">从北京的一声你好，到草原上的辽阔相遇</p>
+<p class="en-text">Trade stories with a hutong family, climb the Great Wall with friends and practise tai chi beneath Shougang’s striking steel structures. Then take an overnight train towards desert dunes and a cool grassland morning. With teachers close by, Chinese becomes a way to ask, to encourage and to belong—wherever the next conversation begins.</p><p class="zh-text" lang="zh-CN">从胡同人家的餐桌，到慕田峪长城的山脊，再到首钢园的赛博功夫；一趟夜卧之后，眼前又展开响沙湾的沙海与辉腾锡勒的清晨。老师陪孩子把中文用在请教、合作与相互鼓励中，认识不同地方的生活，也发现自己能在陌生的风景里，交到新的朋友。</p></section><section class="rhythm-section" id="daily-rhythm" aria-labelledby="rhythm-title"><div class="rhythm-intro"><p class="eyebrow">A typical class day</p><h2 class="section-heading" id="rhythm-title">A little structure. Room to explore.</h2><p class="section-title-zh" lang="zh-CN">上课日的一天</p></div><ol class="daily-timeline">
+<li class=""><span class="clock">08:00–09:15</span><span class="event-en">Wake up, freshen up &amp; enjoy a healthy camp breakfast.</span><span class="event-zh" lang="zh-CN">晨起洗漱，享用健康营地早餐。</span></li>
+<li class=""><span class="clock">09:30–12:30</span><span class="event-en">Chinese lessons in groups matched to each student’s level.</span><span class="event-zh" lang="zh-CN">按中文水平分班，开启上午中文课。</span></li>
+<li class=""><span class="clock">12:30–13:30</span><span class="event-en">Campus lunch &amp; a midday break.</span><span class="event-zh" lang="zh-CN">校园午餐与午间休息。</span></li>
+<li class="coaching"><span class="clock">13:30–15:00</span><span class="event-en">One-to-one Chinese tutoring &amp; homework time.</span><span class="event-zh" lang="zh-CN">一对一中文辅导，完成作业。</span></li>
+<li class="wide"><span class="clock">After 15:00</span><span class="event-en">Discover the city through Chinese language quests, with later starts to avoid the midday heat.</span><span class="event-zh" lang="zh-CN">避开午间炎热，错峰出发，带着中文任务探索城市。</span></li>
+<li class="wide"><span class="clock">Evening</span><span class="event-en">Local heritage flavours alongside Japanese, Korean and Western meals, with sport and time to relax with friends.</span><span class="event-zh" lang="zh-CN">京味、草原风味与日、韩、西餐穿插，运动与伙伴时光相伴。</span></li>
+<li class="rest"><span class="clock">21:30</span><span class="event-en">Wind down &amp; rest.</span><span class="event-zh" lang="zh-CN">准备就寝，养足精神。</span></li>
+</ol></section><section class="method-detail" aria-labelledby="learning-title"><h2 class="eyebrow" id="learning-title">The RICH Method · 学过的中文，带到生活里</h2><p class="en-text">Before every outing, teachers demonstrate and rehearse a language quest, then guide students at their own level. Beginners start with observation and prompt cards; more experienced speakers follow up, compare and explain. One-to-one Chinese tutoring—a RICH commitment for over a decade—gives each child time to practise with a teacher and make an expression their own.</p><p class="zh-text" lang="zh-CN">每次外出都有中文任务。老师先示范、陪练，再按水平带队实践：初学者从观察和词句卡起步，已有基础的孩子尝试追问、比较和说明理由。坚持十余年的一对一中文辅导，让每个孩子都有和老师细细打磨表达的时间。</p><p class="en-text">A question asked with a little more courage can become a conversation, and a conversation can become a friendship. Through a handmade piece, a shared meal or a story told in their own words, children find a sense of belonging in another culture—and moments of beauty to enjoy together, whatever language they grew up speaking.</p><p class="zh-text" lang="zh-CN">勇敢问出的一个问题，可能成为一段对话、一份友谊。一件亲手做的作品、一张围坐的餐桌，让陌生的文化渐渐有了亲切感。孩子把所见所感写进笔记、讲成故事，也发现：即使说着不同的母语，总有值得一起欣赏的美。</p></section><section class="dining-intro" aria-labelledby="dining-title"><h2 class="eyebrow" id="dining-title">Around our table · 尝新，也有熟悉的味道</h2><p class="en-text">Make dumplings with a hutong family, wrap a Peking duck pancake and share roast lamb leg with friends on the grasslands. Conveyor-belt sushi, Korean grilled beef and Western favourites bring variety and familiar comforts. At PKU, dinner with university students offers a glimpse of everyday campus life; in Inner Mongolia, milk tea and oat-flour dishes open another conversation about home.</p><p class="zh-text" lang="zh-CN">在胡同人家亲手包饺子，围桌卷一张烤鸭薄饼，再到草原分享烤羊腿、奶茶与莜面。旋转寿司、韩式烤牛肉和西式餐桌穿插其间，尝新也有熟悉的滋味。和北大学子一起去食堂选餐，也向草原上的主人请教饮食习惯，让一餐饭成为认识彼此生活的机会。</p><div class="menu-note"><p class="en-text">Menus, seasoning and meal order are thoughtfully adapted to the day’s activities, students’ tastes and dietary needs.</p><p class="zh-text" lang="zh-CN">具体菜品、辣度与用餐顺序，会结合当天活动、孩子的口味与饮食需求灵活安排。</p></div></section><section class="city-chapter" aria-labelledby="beijing-title"><div class="city-heading" id="beijing"><h2 id="beijing-title">Beijing <span lang="zh-CN">北京</span></h2><span>DAYS 01–13 · JUL 22–AUG 03</span><p class="city-tag-en">From lakeside gardens and hutong friendships to the Great Wall and a little cyber kungfu.</p><p lang="zh-CN">从皇家园林与胡同新朋友，到长城山脊与首钢赛博功夫。</p></div>
+<article class="day-module" id="day-01" data-day="1" data-date="2027-07-22" aria-labelledby="day-title-1">
+<div class="day-header"><div class="date-box"><span class="day-number">DAY 01</span><span class="date-day">THU</span><time class="date-num" datetime="2027-07-22" aria-label="Thursday 22 July 2027">22</time><span class="date-month">JUL</span></div><div class="day-title-wrap"><h3 class="day-title-en" id="day-title-1">A Beijing Welcome &amp; Your New Camp Home</h3><p class="day-title-zh" lang="zh-CN">北京接机与北大营地迎新</p></div></div><div class="schedule-table">
+<div class="schedule-row"><div class="time-col">All day<span lang="zh-CN">全天</span></div><div class="text-col"><p class="en-text">The RICH team welcomes you at Beijing airport and helps you settle into the PKU camp. A relaxed conversation with the Chinese programme director gives teachers a first sense of your interests and Chinese experience.</p><p class="zh-text" lang="zh-CN">老师在北京机场迎接大家，陪同前往北大营地报到。放好行李，和RICH中文主管轻松聊聊，让老师认识你的兴趣与中文学习经历。</p></div></div>
+<div class="schedule-row"><div class="time-col">Evening<span lang="zh-CN">晚间</span></div><div class="text-col"><p class="en-text">Share a welcome dinner and join Chinese icebreaker games with your teachers and new friends. Residential staff help everyone find their way around camp, settle into the routine and get a good night&#x27;s rest.</p><p class="zh-text" lang="zh-CN">欢迎晚宴后，用中文破冰游戏认识老师和新伙伴。生活老师陪大家熟悉营地作息，从放松的第一晚开始，按时就寝，好好休息。</p></div></div>
+<div class="schedule-row quest-row"><div class="time-col">Language Quest<span lang="zh-CN">今日中文任务</span></div><div class="text-col"><p class="en-text"><strong class="quest-name">My First Camp Conversation</strong>Share your name and an interest in Chinese. Find something in common during a game, and let a first greeting become the start of a friendship.</p><p class="zh-text" lang="zh-CN"><strong class="quest-name">我的中文搭子上线</strong>从名字和一个爱好说起，在游戏里找找共同话题。老师和伙伴就在身边，陪你把第一声问候说出口。</p></div></div>
+<div class="schedule-row dining-row"><div class="time-col">At the table<span lang="zh-CN">餐桌风味</span></div><div class="text-col"><p class="en-text"><strong class="dining-name">A Warm Beijing Welcome</strong>A generous table of Beijing home-style dishes, vegetables and warm rice or noodles welcomes everyone after the journey. Sit with teachers and new campmates, swap stories from home and learn one another’s names over a relaxed first dinner full of conversation and laughter.</p><p class="zh-text" lang="zh-CN"><strong class="dining-name">欢迎晚宴：京味家常菜</strong>京酱肉丝等家常热菜，配上清爽时蔬与温热主食，为远道而来的孩子接风。老师和伙伴围坐聊家乡、说趣事，在笑声里记住彼此的名字，用轻松热情的第一餐开启北京生活。</p></div></div>
+</div></article>
+<article class="day-module" id="day-02" data-day="2" data-date="2027-07-23" aria-labelledby="day-title-2">
+<div class="day-header"><div class="date-box"><span class="day-number">DAY 02</span><span class="date-day">FRI</span><time class="date-num" datetime="2027-07-23" aria-label="Friday 23 July 2027">23</time><span class="date-month">JUL</span></div><div class="day-title-wrap"><h3 class="day-title-en" id="day-title-2">The Summer Palace &amp; Our First Beijing Stories</h3><p class="day-title-zh" lang="zh-CN">颐和园泛舟与第一段北京故事</p></div></div><div class="schedule-table">
+<div class="schedule-row"><div class="time-col">Morning<span lang="zh-CN">上午</span></div><div class="text-col"><p class="en-text">A Chinese assessment helps teachers place you in a class that fits. In the first three-hour lesson, practise introducing yourself and describing a place, ready to share a favourite view with friends from different parts of the world.</p><p class="zh-text" lang="zh-CN">通过中文水平测试，进入适合自己的班级。第一堂3小时中文课里，练习自我介绍和风景描述，准备把眼前的湖光与家乡的景色，说给来自不同地方的新伙伴听。</p></div></div>
+<div class="schedule-row coaching-row"><div class="time-col">After lunch<span lang="zh-CN">午间至午后</span></div><div class="text-col"><p class="en-text">After lunch on campus and a short rest, work on homework during one-to-one Chinese tutoring. Your teacher helps you practise a question about the gardens and choose the words you need to describe a view in your own way.</p><p class="zh-text" lang="zh-CN">校内午餐、短休后，在一对一中文辅导中完成作业。和老师准备一句想问的园林问题，再练练描述风景的词句，带着适合自己程度的表达去认识北京。</p></div></div>
+<div class="schedule-row"><div class="time-col">Afternoon &amp; evening<span lang="zh-CN">下午至晚间</span></div><div class="text-col"><p class="en-text">Take a boat across Kunming Lake at the Summer Palace, then walk along the Long Corridor with your teachers. Look closely at painted scenes and garden details, discover the names of things that catch your eye and trade stories of landscapes back home.</p><p class="zh-text" lang="zh-CN">在颐和园乘船游昆明湖，再随老师漫步长廊，看看梁间彩绘与园林细节。遇到好奇的景物，试着问问它的名字；和伙伴交换家乡风景，在不同的目光里认识同一片湖光。</p></div></div>
+<div class="schedule-row quest-row"><div class="time-col">Language Quest<span lang="zh-CN">今日中文任务</span></div><div class="text-col"><p class="en-text"><strong class="quest-name">The Royal Garden Discovery Club</strong>Choose a garden detail and ask what it is called. Use a picture and a few words, or describe how the scene compares with a place back home; let your friends see the view through your eyes.</p><p class="zh-text" lang="zh-CN"><strong class="quest-name">皇家园林发现局</strong>选一处好奇的园林细节，问问它的名字。可以用图片和几个词来介绍，也可以比较眼前景色与家乡的不同，让伙伴看见你眼里的颐和园。</p></div></div>
+<div class="schedule-row dining-row"><div class="time-col">At the table<span lang="zh-CN">餐桌风味</span></div><div class="text-col"><p class="en-text"><strong class="dining-name">Beijing Copper-Pot Hotpot</strong>After a lakeside afternoon, gather around a Beijing copper hotpot. Share thinly sliced meat, seasonal vegetables and sesame dipping sauce, compare favourite combinations and let the conversation wander through the little stories you have collected.</p><p class="zh-text" lang="zh-CN"><strong class="dining-name">晚餐：老北京铜锅涮肉</strong>湖畔漫步之后，围坐铜锅旁，涮一片鲜切肉、夹一筷时蔬，蘸上香浓芝麻酱。聊聊今天发现的风景，也尝尝彼此推荐的搭配，在热闹的餐桌上慢慢熟悉。</p></div></div>
+</div></article>
+<article class="day-module" id="day-03" data-day="3" data-date="2027-07-24" aria-labelledby="day-title-3">
+<div class="day-header"><div class="date-box"><span class="day-number">DAY 03</span><span class="date-day">SAT</span><time class="date-num" datetime="2027-07-24" aria-label="Saturday 24 July 2027">24</time><span class="date-month">JUL</span></div><div class="day-title-wrap"><h3 class="day-title-en" id="day-title-3">Hutong Discoveries &amp; Peking Duck</h3><p class="day-title-zh" lang="zh-CN">南锣胡同与北京烤鸭</p></div></div><div class="schedule-table">
+<div class="schedule-row"><div class="time-col">Morning<span lang="zh-CN">上午</span></div><div class="text-col"><p class="en-text">In Chinese class, practise asking about a handmade object, a favourite flavour or a shopkeeper’s work. Listen to your partner’s answer and try a follow-up question, preparing to discover how Beijing’s old lanes connect with everyday life today.</p><p class="zh-text" lang="zh-CN">中文课上练习礼貌提问，聊聊手工作品、喜欢的口味与店主的工作。听清伙伴的回答，再试着追问一句，准备去发现北京老街怎样连接今天的生活。</p></div></div>
+<div class="schedule-row coaching-row"><div class="time-col">After lunch<span lang="zh-CN">午间至午后</span></div><div class="text-col"><p class="en-text">After lunch and a short rest, work on homework and rehearse your craft-shop conversation during one-to-one Chinese tutoring. Practise an opening question, learn to ask for a demonstration and prepare one thing you can share about shopping at home.</p><p class="zh-text" lang="zh-CN">校内午餐、短休后，通过一对一中文辅导完成作业，练习下午和店主交流的词句。说熟一句开场白，试着请教做法，也准备分享一点家乡的购物日常。</p></div></div>
+<div class="schedule-row"><div class="time-col">Afternoon &amp; evening<span lang="zh-CN">下午至晚间</span></div><div class="text-col"><p class="en-text">Explore Nanluoguxiang’s traditional craft shops with your teachers. Ask a willing shopkeeper about an object that catches your eye, notice how QR-code ordering fits into an old lane, then gather over Peking duck to compare the stories you have discovered.</p><p class="zh-text" lang="zh-CN">跟老师走进南锣鼓巷，探索传统手艺小店，向愿意交流的店主请教一件物品的故事。也看看老街里的扫码点单与数字生活，晚餐一起卷烤鸭薄饼，分享下午的新发现。</p></div></div>
+<div class="schedule-row quest-row"><div class="time-col">Language Quest<span lang="zh-CN">今日中文任务</span></div><div class="text-col"><p class="en-text"><strong class="quest-name">Hutong Life, Old &amp; New</strong>Ask about a craft, a shop or a new way of ordering. Begin with an object’s name and a simple question, or compare a shopkeeper’s answer with life at home; bring one real conversation back to your group.</p><p class="zh-text" lang="zh-CN"><strong class="quest-name">胡同生活连接站</strong>向店主问问手艺、老店或新的点单方式。可以从物品名称和一句提问开始，也可以把听来的回答与家乡生活比较，将一段真实交流带回小组。</p></div></div>
+<div class="schedule-row dining-row"><div class="time-col">At the table<span lang="zh-CN">餐桌风味</span></div><div class="text-col"><p class="en-text"><strong class="dining-name">Peking Duck &amp; Beijing Flavours</strong>Discover the layers of a duck pancake: crisp skin, soft wrapping and fresh accompaniments, with vegetables and other dishes to share around the table.</p><p class="zh-text" lang="zh-CN"><strong class="dining-name">晚餐：北京烤鸭</strong>从薄饼、鸭肉到葱丝与甜面酱，尝尝一卷烤鸭里的丰富层次，搭配时蔬和热菜，分享一桌北京味道。</p></div></div>
+</div></article>
+<article class="day-module" id="day-04" data-day="4" data-date="2027-07-25" aria-labelledby="day-title-4">
+<div class="day-header highlight"><div class="date-box"><span class="day-number">DAY 04</span><span class="date-day">SUN</span><time class="date-num" datetime="2027-07-25" aria-label="Sunday 25 July 2027">25</time><span class="date-month">JUL</span></div><div class="day-title-wrap"><h3 class="day-title-en" id="day-title-4">The Central Axis &amp; Our Chinese Wuxia Story</h3><p class="day-title-zh" lang="zh-CN">景山中轴线与我们的武侠短剧</p></div></div><div class="schedule-table">
+<div class="schedule-row"><div class="time-col">Morning<span lang="zh-CN">上午</span></div><div class="text-col"><p class="en-text">Choose a character and build a short wuxia adventure with your classmates in Chinese class. Teachers help you shape the dialogue, from one memorable line to a lively exchange, so everyone has a voice in the story you will create together.</p><p class="zh-text" lang="zh-CN">中文课上和伙伴选角色、商量武侠故事，再请老师帮忙打磨台词。可以从一句有趣的话开始，也可以接住角色之间的对话，让每个人都能在共同的故事里开口。</p></div></div>
+<div class="schedule-row coaching-row"><div class="time-col">After lunch<span lang="zh-CN">午间至午后</span></div><div class="text-col"><p class="en-text">After lunch on campus and a short rest, work on homework and rehearse your part during one-to-one Chinese tutoring. Your teacher helps you make a line sound like your own, practise a response and feel ready to perform with friends.</p><p class="zh-text" lang="zh-CN">校内午餐、短休后，在一对一中文辅导中完成作业，练练自己的角色台词。老师陪你把一句话说得自然，再试着回应伙伴，让镜头前的表达更有底气。</p></div></div>
+<div class="schedule-row"><div class="time-col">Afternoon &amp; evening<span lang="zh-CN">下午至晚间</span></div><div class="text-col"><p class="en-text">Climb Jingshan for a view across the Forbidden City and Beijing’s Central Axis. Dress in period costumes and film a short Chinese wuxia scene with your friends, bringing the morning’s dialogue to life against the city that inspired your story.</p><p class="zh-text" lang="zh-CN">登上景山，俯瞰紫禁城与北京中轴线，看看屋顶与街巷怎样铺展成一座城。换上古装，和伙伴合作拍一段中文武侠短剧，让上午商量的台词走进眼前的江湖。</p></div></div>
+<div class="schedule-row quest-row"><div class="time-col">Language Quest<span lang="zh-CN">今日中文任务</span></div><div class="text-col"><p class="en-text"><strong class="quest-name">A Story Along the Central Axis</strong>Introduce one thing you notice from the hill, then give your character a line of your own. Use a practised phrase or build a scene with your partners; the film captures both Beijing’s skyline and your growing confidence in Chinese.</p><p class="zh-text" lang="zh-CN"><strong class="quest-name">中轴线穿越剧场</strong>从高处介绍一处北京风景，再给自己的角色一句台词。可以用练熟的短句，也可以和伙伴接出一段对话，让短片留下城市的轮廓，也留下敢于表达的自己。</p></div></div>
+<div class="schedule-row dining-row"><div class="time-col">At the table<span lang="zh-CN">餐桌风味</span></div><div class="text-col"><p class="en-text"><strong class="dining-name">Zhajiangmian &amp; Beijing Favourites</strong>Mix savoury zhajiang sauce through noodles with crisp vegetable toppings, then share a selection of Beijing dishes. Finish with the gentle sweetness of a traditional milk dessert, comparing favourite flavours and laughing together over the day’s film-making moments.</p><p class="zh-text" lang="zh-CN"><strong class="dining-name">晚餐：炸酱面、京味菜与宫廷奶酪</strong>拌开咸香炸酱与清爽菜码，尝尝老北京熟悉的一碗面，再分享京味热菜与时蔬。最后用一份甜润的宫廷奶酪收尾，边吃边聊今天拍摄时那些有趣的瞬间。</p></div></div>
+</div></article>
+<article class="day-module" id="day-05" data-day="5" data-date="2027-07-26" aria-labelledby="day-title-5">
+<div class="day-header highlight"><div class="date-box"><span class="day-number">DAY 05</span><span class="date-day">MON</span><time class="date-num" datetime="2027-07-26" aria-label="Monday 26 July 2027">26</time><span class="date-month">JUL</span></div><div class="day-title-wrap"><h3 class="day-title-en" id="day-title-5">Universal Beijing &amp; Pop-Culture Conversations</h3><p class="day-title-zh" lang="zh-CN">北京环球影城与流行文化小记者</p></div></div><div class="schedule-table">
+<div class="schedule-row"><div class="time-col">All day<span lang="zh-CN">全天</span></div><div class="text-col"><p class="en-text">Spend a joyful day at Universal Beijing in teacher-led groups, stepping into favourite movie worlds with friends. Then take a brave step beyond your own group: meet Chinese Gen-Z park-goers and discover the characters, stories and imagined worlds you love in common.</p><p class="zh-text" lang="zh-CN">老师分组带队畅玩北京环球影城，和伙伴走进喜爱的电影世界。再勇敢迈出熟悉的小圈子，与中国Z世代游客互动，从角色、故事和共同喜爱的电影世界聊起。</p></div></div>
+<div class="schedule-row"><div class="time-col">Meals &amp; return to camp<span lang="zh-CN">用餐与返营</span></div><div class="text-col"><p class="en-text">Take breaks for lunch and dinner inside the park, with time to sit down, cool off and recharge. Return to camp with your teachers, then share a favourite moment or an unexpected interview answer with friends as the day winds down.</p><p class="zh-text" lang="zh-CN">在园区安排午晚餐，游玩间隙坐下来纳凉、补充体力，结束后随老师返营休息。和伙伴回味最开心的片段，也分享街访里听到的有趣回答，让电影之外的新相遇留在记忆里。</p></div></div>
+<div class="schedule-row quest-row"><div class="time-col">Language Quest<span lang="zh-CN">今日中文任务</span></div><div class="text-col"><p class="en-text"><strong class="quest-name">The Pop-Culture Reporter</strong>Rehearse your reporter’s opening, then invite a willing Chinese Gen-Z visitor to a short interview in Chinese. Ask which movie world they would step into and why; ask a follow-up question about an interesting answer, and bring a new perspective back to your group.</p><p class="zh-text" lang="zh-CN"><strong class="quest-name">流行文化小记者</strong>练好小记者的开场白，征得同意后，用中文街访中国Z世代游客：最想走进哪个电影世界，为什么？顺着一个有趣的回答继续聊，把不同的想法带回小组。</p></div></div>
+<div class="schedule-row dining-row"><div class="time-col">Park meals<span lang="zh-CN">园区餐食</span></div><div class="text-col"><p class="en-text"><strong class="dining-name">Dining in the Movie Worlds</strong>Enjoy meals in the park’s movie-inspired settings, with time to sit down, recharge and swap the most surprising or entertaining answers from your interviews.</p><p class="zh-text" lang="zh-CN"><strong class="dining-name">午晚餐：园区美食</strong>在电影主题的餐饮空间里坐下来，吃好午晚餐、补充体力。和伙伴交换街访中最有趣的回答，让陌生人的故事也成为今天的精彩片段。</p></div></div>
+</div></article>
+<article class="day-module" id="day-06" data-day="6" data-date="2027-07-27" aria-labelledby="day-title-6">
+<div class="day-header highlight"><div class="date-box"><span class="day-number">DAY 06</span><span class="date-day">TUE</span><time class="date-num" datetime="2027-07-27" aria-label="Tuesday 27 July 2027">27</time><span class="date-month">JUL</span></div><div class="day-title-wrap"><h3 class="day-title-en" id="day-title-6">Humanoid Robots &amp; the Language of Movement</h3><p class="day-title-zh" lang="zh-CN">人形机器人与未来伙伴养成记</p></div></div><div class="schedule-table">
+<div class="schedule-row"><div class="time-col">Morning<span lang="zh-CN">上午</span></div><div class="text-col"><p class="en-text">In Chinese class, explore action words and practise explaining a simple sequence. Ask how something works, listen to a partner’s instructions and refine your own, preparing to look closely at the ways a robot learns a movement.</p><p class="zh-text" lang="zh-CN">中文课上认识动作词，练习把一个过程说清楚。试着问“它怎样学会这个动作”，再和伙伴轮流说指令、听指令，为下午走进机器人训练现场做好准备。</p></div></div>
+<div class="schedule-row coaching-row"><div class="time-col">After lunch<span lang="zh-CN">午间至午后</span></div><div class="text-col"><p class="en-text">After lunch on campus and a short rest, work through homework and practise your questions in one-to-one Chinese tutoring. Your teacher helps you turn curiosity about robots into clear words, from naming a movement to asking why it needs practice.</p><p class="zh-text" lang="zh-CN">校内午餐、短休后，在一对一中文辅导中完成作业，练练想向工作人员请教的问题。从一个动作名称到“为什么需要这样训练”，把好奇变成自己说得出的中文。</p></div></div>
+<div class="schedule-row"><div class="time-col">Afternoon &amp; evening<span lang="zh-CN">下午至晚间</span></div><div class="text-col"><p class="en-text">Visit the humanoid robot data training centre in Shijingshan. Watch how a movement is demonstrated and recorded, try an operation with staff guidance, and discover how small adjustments help a robot work towards an everyday task.</p><p class="zh-text" lang="zh-CN">走进石景山人形机器人数据训练中心，看看动作怎样被示范与记录。在工作人员指导下体验操作，观察一次小小调整带来的变化，发现机器人怎样学习完成日常任务。</p></div></div>
+<div class="schedule-row quest-row"><div class="time-col">Language Quest<span lang="zh-CN">今日中文任务</span></div><div class="text-col"><p class="en-text"><strong class="quest-name">Today, I Coach a Robot</strong>Ask how one movement is taught, then describe what you notice. Use action cards or a short sequence, or explain which part needed adjusting and why; your teacher helps you shape the discovery into your own Chinese.</p><p class="zh-text" lang="zh-CN"><strong class="quest-name">我给机器人当教练</strong>请教一个动作怎样训练，再把观察讲出来。可以借助动作卡和简单步骤，也可以说明哪里需要调整、为什么，让一次科技体验变成自己的中文表达。</p></div></div>
+<div class="schedule-row dining-row"><div class="time-col">At the table<span lang="zh-CN">餐桌风味</span></div><div class="text-col"><p class="en-text"><strong class="dining-name">Korean Beef Barbecue &amp; Noodle Hotpot</strong>Gather around Korean grilled beef and a bubbling budae-jjigae hotpot with noodles, with vegetables to share. Pass dishes, swap stories and enjoy a lively dinner with friends, talking about the robot movements that made you curious and the questions you asked.</p><p class="zh-text" lang="zh-CN"><strong class="dining-name">晚餐：韩式烤牛肉与部队锅面</strong>韩式烤牛肉的香气，配上部队锅里咕嘟煮开的面条与时蔬。大家围桌分享，聊聊让自己好奇的机器人动作，也说说今天问出了什么、又想到了哪些新问题。</p></div></div>
+</div></article>
+<article class="day-module" id="day-07" data-day="7" data-date="2027-07-28" aria-labelledby="day-title-7">
+<div class="day-header highlight"><div class="date-box"><span class="day-number">DAY 07</span><span class="date-day">WED</span><time class="date-num" datetime="2027-07-28" aria-label="Wednesday 28 July 2027">28</time><span class="date-month">JUL</span></div><div class="day-title-wrap"><h3 class="day-title-en" id="day-title-7">Hutong Hosts, Handmade Crafts &amp; the Bird’s Nest by Night</h3><p class="day-title-zh" lang="zh-CN">胡同人家的手艺与鸟巢夏夜</p></div></div><div class="schedule-table">
+<div class="schedule-row"><div class="time-col">Morning<span lang="zh-CN">上午</span></div><div class="text-col"><p class="en-text">In Chinese class, practise asking a host to show you how something is made. Name a material, describe a step and talk about a food from home, preparing to learn a traditional craft and share a kitchen with new friends.</p><p class="zh-text" lang="zh-CN">中文课上练习向主人请教做法，说说材料名称和制作步骤，也介绍一样家乡食物。把“请您再示范一次”练熟，准备走进胡同人家，在看、问、做之间认识彼此。</p></div></div>
+<div class="schedule-row"><div class="time-col">After lunch<span lang="zh-CN">午间至午后</span></div><div class="text-col"><p class="en-text">After lunch on campus, take a quiet midday break before heading out as the heat eases. With your teachers, look over the visit’s language prompts and think of a family food story you would enjoy sharing with your hosts.</p><p class="zh-text" lang="zh-CN">校内午餐后留出午间休整，避开暑热再出发。和老师看看今天的交流提示，想想自己家里的一道菜、一个厨房故事，把好奇与自己的生活一起带进胡同。</p></div></div>
+<div class="schedule-row"><div class="time-col">Afternoon &amp; dinner<span lang="zh-CN">下午至晚餐</span></div><div class="text-col"><p class="en-text">Visit a hutong home to learn a traditional craft with your hosts. Watch as they personally show you how to wrap dumplings, try each fold yourself and gather around the dinner table to exchange stories of home and everyday life.</p><p class="zh-text" lang="zh-CN">走进胡同人家，向主人学一门非遗手艺，再亲手学包饺子。看清一个捏合动作，自己慢慢试，最后把一盘饺子端上桌，在家常话里分享彼此熟悉的生活。</p></div></div>
+<div class="schedule-row"><div class="time-col">Evening<span lang="zh-CN">晚间</span></div><div class="text-col"><p class="en-text">See the Bird’s Nest lit up against the summer sky, then join your friends for relaxed frisbee passing in a suitable open space. Teachers organise the groups as you practise calling, listening and moving together, enjoying the rhythm of a Beijing evening.</p><p class="zh-text" lang="zh-CN">晚餐后去看鸟巢夜色，在合适的开阔场地开展轻松的飞盘传接。老师组织分组，大家听口令、叫伙伴、找配合，让白天的中文交流延续成北京夏夜里的欢笑与默契。</p></div></div>
+<div class="schedule-row quest-row"><div class="time-col">Language Quest<span lang="zh-CN">今日中文任务</span></div><div class="text-col"><p class="en-text"><strong class="quest-name">Made by Me, Shared with You</strong>Ask your host to demonstrate a detail, then introduce something you have made. Start with a name and a simple step, or explain what needed practice; later, use short Chinese calls to keep your frisbee team connected.</p><p class="zh-text" lang="zh-CN"><strong class="quest-name">胡同里的非遗主理人</strong>请主人示范一个手艺细节，再介绍自己的作品。可以从名称和简单步骤说起，也可以讲讲哪里需要练习；晚间再用简短的中文口令和伙伴传接飞盘，把交流变成配合。</p></div></div>
+<div class="schedule-row dining-row"><div class="time-col">At the table<span lang="zh-CN">餐桌风味</span></div><div class="text-col"><p class="en-text"><strong class="dining-name">Dumplings Made with Our Hosts</strong>The dumplings you have helped to make come to the table with Beijing hot dishes and vegetables. Compare everyone’s folds, talk about favourite fillings and listen as your hosts share a little more of their everyday life.</p><p class="zh-text" lang="zh-CN"><strong class="dining-name">晚餐：和主人亲手包的饺子</strong>把亲手包的饺子端上桌，搭配京味热菜与时蔬。看看大家捏出的不同形状，聊聊喜欢的馅，也听主人讲讲家里的日常，在一餐饭里多认识彼此。</p></div></div>
+</div></article>
+<article class="day-module" id="day-08" data-day="8" data-date="2027-07-29" aria-labelledby="day-title-8">
+<div class="day-header highlight"><div class="date-box"><span class="day-number">DAY 08</span><span class="date-day">THU</span><time class="date-num" datetime="2027-07-29" aria-label="Thursday 29 July 2027">29</time><span class="date-month">JUL</span></div><div class="day-title-wrap"><h3 class="day-title-en" id="day-title-8">Mutianyu: Great Wall, New Heights</h3><p class="day-title-zh" lang="zh-CN">慕田峪长城：索道入山，滑道追风</p></div></div><div class="schedule-table">
+<div class="schedule-row coaching-row"><div class="time-col">Morning<span lang="zh-CN">上午</span></div><div class="text-col"><p class="en-text">Begin with one-to-one Chinese tutoring and homework time. Rehearse a way to encourage a teammate and a few words for the mountain views, then set off for Mutianyu with your teachers. A countryside lunch and a shaded rest give everyone time to recharge before going up the mountain.</p><p class="zh-text" lang="zh-CN">上午先完成一对一中文辅导与作业，练练鼓励伙伴、描述山景的词句，再随老师出发前往慕田峪。抵达后享用山间家常午餐，留出遮阴休整的时间，准备一起登上长城。</p></div></div>
+<div class="schedule-row"><div class="time-col">Afternoon<span lang="zh-CN">下午</span></div><div class="text-col"><p class="en-text">Ride the chairlift above green hills, then explore Mutianyu’s watchtowers with your teachers and friends. Follow the wall as it traces the ridgeline, pause to take in the view and cheer on a teammate. A winding toboggan descent adds a playful finish; teachers arrange the way down around each student’s suitability and the day’s operating conditions.</p><p class="zh-text" lang="zh-CN">乘吊椅索道越过青翠山坡，和老师、伙伴一起走上慕田峪长城。沿着山脊寻找城墙的走向，登上敌楼看远山，也为身边的伙伴加一声油。下山时，蜿蜒的滑道为长城之旅添一份追风的欢笑；老师会结合孩子情况与当天运行条件组织下山。</p></div></div>
+<div class="schedule-row"><div class="time-col">Evening<span lang="zh-CN">晚间</span></div><div class="text-col"><p class="en-text">Return to camp for a shower, dinner and an unhurried evening. Share a moment when someone helped you, or describe the view you most want to remember, before settling down for a good night’s rest.</p><p class="zh-text" lang="zh-CN">返营后洗澡、用晚餐，给身体留出好好休息的时间。聊聊今天谁给过自己鼓励，或说说最想记住的一幅山景，带着登城的满足感结束这一天。</p></div></div>
+<div class="schedule-row quest-row"><div class="time-col">Language Quest<span lang="zh-CN">今日中文任务</span></div><div class="text-col"><p class="en-text"><strong class="quest-name">Great Wall, Great Teammates</strong>Choose a view to describe and a Chinese phrase that helps your team along the way. A few words of encouragement can be a first step; a more detailed story can explain how you supported one another on the climb.</p><p class="zh-text" lang="zh-CN"><strong class="quest-name">长城同伴行动</strong>选一处风景来描述，也用一句中文给伙伴加油。可以从简单的鼓励开始，也可以讲清楚彼此怎样配合、互相照顾，让长城上的一段路成为大家共同的故事。</p></div></div>
+<div class="schedule-row dining-row"><div class="time-col">At the table<span lang="zh-CN">餐桌风味</span></div><div class="text-col"><p class="en-text"><strong class="dining-name">Mountain Lunch &amp; a Comforting Camp Dinner</strong>Enjoy countryside dishes, vegetables and rice or noodles at lunch. Back in Beijing, warm stews, wholesome grains and seasonal vegetables make a comforting shared dinner after the mountain air and a day on your feet.</p><p class="zh-text" lang="zh-CN"><strong class="dining-name">山间午餐与暖心晚餐</strong>午餐尝尝山间家常菜，搭配时蔬与主食。返京后的晚餐以热乎的炖菜、杂粮与蔬菜补充体力，一起吃得舒服，也给热闹的一天留一个从容的收尾。</p></div></div>
+</div></article>
+<article class="day-module" id="day-09" data-day="9" data-date="2027-07-30" aria-labelledby="day-title-9">
+<div class="day-header highlight"><div class="date-box"><span class="day-number">DAY 09</span><span class="date-day">FRI</span><time class="date-num" datetime="2027-07-30" aria-label="Friday 30 July 2027">30</time><span class="date-month">JUL</span></div><div class="day-title-wrap"><h3 class="day-title-en" id="day-title-9">Cyber Kungfu at Shougang Park</h3><p class="day-title-zh" lang="zh-CN">首钢赛博功夫：让太极遇见冬奥地标</p></div></div><div class="schedule-table">
+<div class="schedule-row"><div class="time-col">Morning<span lang="zh-CN">上午</span></div><div class="text-col"><p class="en-text">In Chinese class, practise the words that guide a movement: turn, step, open and slow down. Plan a short introduction for a film that brings an old Chinese art into an unexpected setting, and give your group’s story a title.</p><p class="zh-text" lang="zh-CN">中文课上练习转身、迈步、展开、放慢等动作表达，商量一段短片的开场白。当传统功夫遇上充满未来感的场景，给小组的作品取一个自己的名字。</p></div></div>
+<div class="schedule-row"><div class="time-col">After lunch<span lang="zh-CN">午间至午后</span></div><div class="text-col"><p class="en-text">Have lunch on campus and take a midday break. With your teachers, plan who will introduce the scene, demonstrate a movement and film your group, then head out as the strongest heat eases.</p><p class="zh-text" lang="zh-CN">校内午餐后先休整，和老师商量谁介绍场景、谁示范动作、谁来拍摄。避开午间最热的时段再出发，让每个人都能在小组创作里找到自己的位置。</p></div></div>
+<div class="schedule-row"><div class="time-col">Afternoon &amp; evening<span lang="zh-CN">下午至晚间</span></div><div class="text-col"><p class="en-text">Practise tai chi beside Shougang’s Olympic Big Air jump, where flowing movements meet dramatic steel structures. Learn a sequence from your instructor, then create a 30-second Chinese vlog with your friends: a little kungfu, a striking backdrop and your own voice connecting the two.</p><p class="zh-text" lang="zh-CN">来到首钢园冬奥大跳台旁，跟老师学一段太极，让舒展的动作与钢铁建筑同框。和伙伴合作拍一支30秒中文VLOG：用自己的声音介绍动作与场景，把传统功夫拍出属于这一代的赛博气质。</p></div></div>
+<div class="schedule-row quest-row"><div class="time-col">Language Quest<span lang="zh-CN">今日中文任务</span></div><div class="text-col"><p class="en-text"><strong class="quest-name">My 30-Second Cyber Kungfu Film</strong>Teach a friend one movement in Chinese, then give your film a short spoken introduction. Start with a clear action cue, or explain why tai chi and an Olympic industrial landmark make such an unexpected pair.</p><p class="zh-text" lang="zh-CN"><strong class="quest-name">赛博功夫出片计划</strong>先用中文教伙伴一个动作，再给短片配一段自己的介绍。可以从清楚的动作口令开始，也可以说说太极与冬奥工业地标相遇，为什么会产生这样特别的画面。</p></div></div>
+<div class="schedule-row dining-row"><div class="time-col">At the table<span lang="zh-CN">餐桌风味</span></div><div class="text-col"><p class="en-text"><strong class="dining-name">Conveyor-Belt Sushi &amp; Favourite Finds</strong>Watch the colourful plates pass by and choose the flavours you enjoy, alongside warm Japanese dishes and vegetables. Compare a new discovery with a familiar favourite while swapping ideas for your group’s film.</p><p class="zh-text" lang="zh-CN"><strong class="dining-name">晚餐：旋转寿司，自选好滋味</strong>看着一碟碟寿司转到面前，自由选择喜欢的口味，再搭配日式热餐与蔬菜。尝到新滋味，也找到熟悉的喜欢，围桌聊聊今天哪一个镜头最有意思。</p></div></div>
+</div></article>
+<article class="day-module" id="day-10" data-day="10" data-date="2027-07-31" aria-labelledby="day-title-10">
+<div class="day-header"><div class="date-box"><span class="day-number">DAY 10</span><span class="date-day">SAT</span><time class="date-num" datetime="2027-07-31" aria-label="Saturday 31 July 2027">31</time><span class="date-month">JUL</span></div><div class="day-title-wrap"><h3 class="day-title-en" id="day-title-10">798 Art District &amp; My Chinese Street-Art Statement</h3><p class="day-title-zh" lang="zh-CN">798艺术探索与我的中文街头宣言</p></div></div><div class="schedule-table">
+<div class="schedule-row"><div class="time-col">Morning<span lang="zh-CN">上午</span></div><div class="text-col"><p class="en-text">In Chinese class, turn a thought about cities, nature or friendship into a short phrase. Explore how a colour or an image changes its meaning, and practise explaining why these words matter to you.</p><p class="zh-text" lang="zh-CN">中文课上，把关于城市、自然或友谊的一个想法写成短句。想想用什么颜色、什么图案来表达，再练习说说为什么选择这些字，让创作先从自己的感受出发。</p></div></div>
+<div class="schedule-row coaching-row"><div class="time-col">After lunch<span lang="zh-CN">午间至午后</span></div><div class="text-col"><p class="en-text">After lunch on campus and a short rest, use one-to-one Chinese tutoring to complete homework and refine your phrase. Your teacher helps you make the wording your own and rehearse a short introduction to your artwork.</p><p class="zh-text" lang="zh-CN">校内午餐、短休后，在一对一中文辅导中完成作业，打磨自己的创作短句。老师陪你把想法说清楚，也练练怎样向伙伴介绍即将完成的作品。</p></div></div>
+<div class="schedule-row"><div class="time-col">Afternoon &amp; evening<span lang="zh-CN">下午至晚间</span></div><div class="text-col"><p class="en-text">Explore the creative spaces of 798, noticing how old factory buildings frame new ideas. In a guided street-art workshop, bring your Chinese phrase to life with colour and lettering, then introduce your work and discover what your friends chose to say.</p><p class="zh-text" lang="zh-CN">走进798艺术区，看看旧厂房怎样容纳新的创意。在老师指导的涂鸦创作中，把自己的中文短句变成颜色与字形，再向伙伴介绍作品，听听同一个夏天里不同的人想表达什么。</p></div></div>
+<div class="schedule-row quest-row"><div class="time-col">Language Quest<span lang="zh-CN">今日中文任务</span></div><div class="text-col"><p class="en-text"><strong class="quest-name">Say It in Colour</strong>Create a short Chinese message and explain one choice behind it. Name a colour and a feeling, or share the personal story that inspired your design; every artwork gives the group another way to get to know you.</p><p class="zh-text" lang="zh-CN"><strong class="quest-name">我的中文街头宣言</strong>设计一句中文宣言，说说背后的一个选择。可以从颜色与心情说起，也可以分享灵感来自哪段自己的经历，让一幅作品成为伙伴认识你的另一种方式。</p></div></div>
+<div class="schedule-row dining-row"><div class="time-col">At the table<span lang="zh-CN">餐桌风味</span></div><div class="text-col"><p class="en-text"><strong class="dining-name">A Western Table to Share</strong>Pizza, pasta and vegetables bring familiar flavours to a relaxed evening meal. Pass a plate to a friend, compare the day’s favourite artworks and enjoy the easy conversation that grows around a shared table.</p><p class="zh-text" lang="zh-CN"><strong class="dining-name">晚餐：西式分享餐</strong>披萨、意面与蔬菜组成轻松的西式餐桌，给连续几天的京味探索换一换口味。和伙伴分享喜欢的一块披萨，也分享今天最想带回家的一个创意。</p></div></div>
+</div></article>
+<article class="day-module" id="day-11" data-day="11" data-date="2027-08-01" aria-labelledby="day-title-11">
+<div class="day-header"><div class="date-box"><span class="day-number">DAY 11</span><span class="date-day">SUN</span><time class="date-num" datetime="2027-08-01" aria-label="Sunday 01 August 2027">1</time><span class="date-month">AUG</span></div><div class="day-title-wrap"><h3 class="day-title-en" id="day-title-11">Beihai, Shichahai &amp; Beijing at an Unhurried Pace</h3><p class="day-title-zh" lang="zh-CN">北海什刹海：走进北京人的夏日生活</p></div></div><div class="schedule-table">
+<div class="schedule-row"><div class="time-col">Morning<span lang="zh-CN">上午</span></div><div class="text-col"><p class="en-text">Practise talking about free time in Chinese class: a favourite place to walk, a game to play or a way to spend a summer evening. Learn to follow an answer with another question, making room for a conversation to go somewhere unexpected.</p><p class="zh-text" lang="zh-CN">中文课上聊聊空闲时喜欢做什么：常去哪里散步，喜欢什么运动，怎样度过夏夜。练习顺着一个回答继续追问，让交流从一道题变成真正聊得下去的话题。</p></div></div>
+<div class="schedule-row"><div class="time-col">After lunch<span lang="zh-CN">午间至午后</span></div><div class="text-col"><p class="en-text">Have lunch on campus and rest before the afternoon outing. With your group, choose a question about everyday Beijing life and think about the answer you would give about your own home.</p><p class="zh-text" lang="zh-CN">校内午餐后休整，和小组准备一个关于北京日常生活的问题，也想想如果对方问起自己，会怎样介绍家乡的夏天。</p></div></div>
+<div class="schedule-row"><div class="time-col">Afternoon &amp; evening<span lang="zh-CN">下午至晚间</span></div><div class="text-col"><p class="en-text">Stroll through Beihai and around Shichahai with your teachers, watching the city make room for lakeside walks, games and conversations in the shade. Meet local people who are happy to chat, and discover the small pleasures that make a Beijing summer feel like home.</p><p class="zh-text" lang="zh-CN">跟老师漫步北海与什刹海，看看湖边散步、树荫下聊天与街巷里的生活。向愿意交流的北京人问问他们的夏日乐趣，在熟悉的日常话题里，慢慢认识这座城市亲切的一面。</p></div></div>
+<div class="schedule-row quest-row"><div class="time-col">Language Quest<span lang="zh-CN">今日中文任务</span></div><div class="text-col"><p class="en-text"><strong class="quest-name">The Beijing Slow-Life Correspondent</strong>Ask someone what they enjoy doing on a summer evening, then share a moment from your own life. Record a short Chinese voice-over about a detail you noticed, from a few descriptive words to a story about two different ways of unwinding.</p><p class="zh-text" lang="zh-CN"><strong class="quest-name">北京松弛感观察员</strong>问问一位当地人最喜欢怎样度过夏夜，也分享自己的生活。为今天看到的一个细节录一段中文旁白，可以从几个描述词开始，也可以比较两种放松方式，留下一份有声音的北京记忆。</p></div></div>
+<div class="schedule-row dining-row"><div class="time-col">At the table<span lang="zh-CN">餐桌风味</span></div><div class="text-col"><p class="en-text"><strong class="dining-name">Golden Beef Pies &amp; Beijing Home Cooking</strong>Discover the crisp golden crust and juicy filling of Beijing’s round mending beef pies, served with hot dishes and vegetables. Over dinner, trade the little stories you heard beside the lakes and compare favourite comforts from home.</p><p class="zh-text" lang="zh-CN"><strong class="dining-name">晚餐：门钉肉饼与京味家常菜</strong>尝尝外皮金黄、内馅多汁的门钉牛肉饼，搭配京味热菜与时蔬。把湖边听来的故事带上餐桌，也聊聊在自己家乡，哪一种味道最让人觉得亲切。</p></div></div>
+</div></article>
+<article class="day-module" id="day-12" data-day="12" data-date="2027-08-02" aria-labelledby="day-title-12">
+<div class="day-header"><div class="date-box"><span class="day-number">DAY 12</span><span class="date-day">MON</span><time class="date-num" datetime="2027-08-02" aria-label="Monday 02 August 2027">2</time><span class="date-month">AUG</span></div><div class="day-title-wrap"><h3 class="day-title-en" id="day-title-12">PKU Friendships &amp; Stories from Across China</h3><p class="day-title-zh" lang="zh-CN">北大校园交流与中国家乡故事交换站</p></div></div><div class="schedule-table">
+<div class="schedule-row"><div class="time-col">Morning<span lang="zh-CN">上午</span></div><div class="text-col"><p class="en-text">In Chinese class, prepare to ask university students about their hometowns, studies and daily lives. Learn to describe a landscape or a local tradition, then form a question you would love to take on the coming grassland journey.</p><p class="zh-text" lang="zh-CN">中文课上准备向大学生请教家乡、学习与日常生活，练习描述一种风景或一个地方习惯。再想一个自己最想带去草原的问题，为下一段旅行积累好奇。</p></div></div>
+<div class="schedule-row coaching-row"><div class="time-col">After lunch<span lang="zh-CN">午间至午后</span></div><div class="text-col"><p class="en-text">After lunch and a short rest, complete homework and rehearse your campus conversation during one-to-one Chinese tutoring. Practise listening for a detail that invites a follow-up question, and prepare a story from your own hometown to share.</p><p class="zh-text" lang="zh-CN">午餐、短休后，在一对一中文辅导中完成作业，练习校园交流的开场与追问。带上一个自己的家乡故事，让下午的对话有来有往。</p></div></div>
+<div class="schedule-row"><div class="time-col">Afternoon &amp; dinner<span lang="zh-CN">下午至晚餐</span></div><div class="text-col"><p class="en-text">Explore the PKU campus with university students and hear how different hometowns have shaped their lives. Continue the conversation over dinner in a university dining hall: choose from the food counters, find a seat together and experience the everyday rhythm of student life.</p><p class="zh-text" lang="zh-CN">和北大学子一起探索校园，听听来自不同地方的家乡故事，也说说自己熟悉的生活。晚餐一起到学校食堂，在各式窗口自由选餐、围坐聊天，让校园交流自然延续到大学生日常的餐桌上。</p></div></div>
+<div class="schedule-row quest-row"><div class="time-col">Language Quest<span lang="zh-CN">今日中文任务</span></div><div class="text-col"><p class="en-text"><strong class="quest-name">The Hometown Story Exchange</strong>Discover one detail about a student’s hometown and offer one of your own in return. Use a picture and a short phrase, or compare a local custom in more depth; finish with a question you hope to explore in Inner Mongolia.</p><p class="zh-text" lang="zh-CN"><strong class="quest-name">中国家乡故事交换站</strong>听来一个大学生的家乡细节，再分享一个自己的故事。可以借助照片与短句，也可以更深入地比较地方习惯，最后带着一个新问题，准备走向内蒙古。</p></div></div>
+<div class="schedule-row dining-row"><div class="time-col">At the table<span lang="zh-CN">餐桌风味</span></div><div class="text-col"><p class="en-text"><strong class="dining-name">A Seat at the University Table</strong>Choose your dinner from the university dining-hall counters and sit with your new student friends. Talk about a favourite course, a hometown dish or what a normal university day feels like; the pleasure is in sharing an ordinary evening together.</p><p class="zh-text" lang="zh-CN"><strong class="dining-name">晚餐：和北大学子一起吃食堂</strong>和大学生一起逛食堂窗口、选择喜欢的餐式，再端着餐盘坐到一起。聊课程、家乡与大学日常，重点是相处的轻松与交流的真实，让孩子感受自己也走进了校园生活。</p></div></div>
+</div></article>
+<article class="day-module" id="day-13" data-day="13" data-date="2027-08-03" aria-labelledby="day-title-13">
+<div class="day-header highlight"><div class="date-box"><span class="day-number">DAY 13</span><span class="date-day">TUE</span><time class="date-num" datetime="2027-08-03" aria-label="Tuesday 03 August 2027">3</time><span class="date-month">AUG</span></div><div class="day-title-wrap"><h3 class="day-title-en" id="day-title-13">Our Beijing Celebration &amp; a Sleeper Train to Baotou</h3><p class="day-title-zh" lang="zh-CN">北京结业分享，夜卧奔向沙漠与草原</p></div></div><div class="schedule-table">
+<div class="schedule-row"><div class="time-col">Morning<span lang="zh-CN">上午</span></div><div class="text-col"><p class="en-text">Bring your Beijing discoveries together in a final three-hour Chinese lesson. The last hour includes a Chinese assessment to reflect on your progress; revisit a conversation, a film or a handmade piece and notice how much more you can now express.</p><p class="zh-text" lang="zh-CN">在最后一堂3小时中文课里，整理北京的发现与自己的学习收获。最后1小时安排中文结业测试，再回看一段交流、一支短片或一件手作，发现自己已经能说出更多想法。</p></div></div>
+<div class="schedule-row"><div class="time-col">Afternoon<span lang="zh-CN">下午</span></div><div class="text-col"><p class="en-text">After lunch on campus and a rest, celebrate your progress with classmates and teachers. Pack for the desert and grasslands, and rehearse the questions you want to ask the people who will welcome you there.</p><p class="zh-text" lang="zh-CN">校内午餐、休息后，和老师、伙伴一起举行结业分享。整理沙漠与草原旅途的行李，练练想向当地人请教的问题，带着北京积累的表达与默契踏上新一程。</p></div></div>
+<div class="schedule-row"><div class="time-col">Evening &amp; overnight<span lang="zh-CN">晚间至夜间</span></div><div class="text-col"><p class="en-text">Travel with your teachers to Beijing Fengtai Station with time for dinner before boarding. Choose a warm meal, look after your belongings and settle into your soft sleeper for the overnight journey to Baotou, carrying the group’s Beijing stories towards a wider horizon.</p><p class="zh-text" lang="zh-CN">随老师从容前往北京丰台站，在候车前留出晚餐时间，选择一份热乎的餐食、整理好随身物品。登上开往包头的夜卧列车，安顿软卧床铺，在休息中迎接沙漠与草原的下一章。</p></div></div>
+<div class="schedule-row quest-row"><div class="time-col">Language Quest<span lang="zh-CN">今日中文任务</span></div><div class="text-col"><p class="en-text"><strong class="quest-name">My Next Horizon</strong>Share one discovery from Beijing and one question for the journey ahead. Turn your question into a simple phrase or a fuller interview plan, then listen to the different things your friends hope to find out.</p><p class="zh-text" lang="zh-CN"><strong class="quest-name">辽阔中国出发计划</strong>分享一个北京的新发现，再提出一个想带去沙漠或草原的问题。可以把问题练成一句短句，也可以准备一段访谈，让每个人的好奇都成为下一程的一部分。</p></div></div>
+<div class="schedule-row dining-row"><div class="time-col">At the table<span lang="zh-CN">餐桌风味</span></div><div class="text-col"><p class="en-text"><strong class="dining-name">Campus Lunch &amp; a Station Supper</strong>Enjoy lunch on campus, then have dinner at the station before the night train. A warm meal and time to sit together make the departure feel calm, while choosing food and reading the concourse signs bring Chinese into another part of everyday travel.</p><p class="zh-text" lang="zh-CN"><strong class="dining-name">校内午餐与车站出发晚餐</strong>午餐在校园用好，晚餐留在车站从容安排。先吃一份暖胃的饭，再和伙伴坐下来准备出发；从选餐到认识站内标识，也把中文带进真实的出行场景。</p></div></div>
+</div></article>
+</section>
+<section class="city-chapter" aria-labelledby="inner-mongolia-title"><div class="city-heading" id="inner-mongolia"><h2 id="inner-mongolia-title">Inner Mongolia <span lang="zh-CN">内蒙古</span></h2><span>DAYS 14–15 · AUG 04–05</span><p class="city-tag-en">A day among desert dunes, a night on the grasslands and new stories beneath an open sky.</p><p lang="zh-CN">在响沙湾尽兴游玩，夜宿辉腾锡勒，迎着草原晨风继续认识辽阔中国。</p></div>
+<article class="day-module" id="day-14" data-day="14" data-date="2027-08-04" aria-labelledby="day-title-14">
+<div class="day-header highlight"><div class="date-box"><span class="day-number">DAY 14</span><span class="date-day">WED</span><time class="date-num" datetime="2027-08-04" aria-label="Wednesday 04 August 2027">4</time><span class="date-month">AUG</span></div><div class="day-title-wrap"><h3 class="day-title-en" id="day-title-14">Xiangshawan Desert Adventures &amp; a Grassland Night</h3><p class="day-title-zh" lang="zh-CN">响沙湾尽兴玩沙，夜宿辉腾锡勒草原</p></div></div><div class="schedule-table">
+<div class="schedule-row"><div class="time-col">Morning<span lang="zh-CN">上午</span></div><div class="text-col"><p class="en-text">Arrive in Baotou, have breakfast and travel by coach to Xiangshawan, Whistling Dune Bay. The desert cable car carries you towards rolling dunes, opening a landscape unlike anything you have seen from the streets of Beijing.</p><p class="zh-text" lang="zh-CN">早间抵达包头，安排早餐后乘大巴前往响沙湾。坐上沙漠索道，脚下渐渐铺开起伏沙丘，让孩子从北京的街巷走进另一种辽阔。</p></div></div>
+<div class="schedule-row"><div class="time-col">Daytime<span lang="zh-CN">日间</span></div><div class="text-col"><p class="en-text">Give the day to the desert: ride a camel, try sand sliding and explore the outdoor amusements of Xiansha Island in teacher-led groups. Stop for lunch and shaded breaks between activities, with time to enjoy the place, cheer for friends and ask the staff about life and work among the dunes.</p><p class="zh-text" lang="zh-CN">把白天留给响沙湾，老师分组带队骑骆驼、体验滑沙，再到仙沙岛尽兴游玩。活动之间穿插午餐、遮阴休息与补水，既有为伙伴加油的热闹，也有向工作人员请教沙漠生活的时间。</p></div></div>
+<div class="schedule-row"><div class="time-col">Evening &amp; overnight<span lang="zh-CN">傍晚至夜间</span></div><div class="text-col"><p class="en-text">Brush off the sand, freshen up and have dinner before travelling directly to Huitengxile Grassland by coach. Settle into your group’s Mongolian-style yurt accommodation, shower and rest, ready to wake up close to the wide-open landscape you will explore tomorrow.</p><p class="zh-text" lang="zh-CN">尽兴之后清理沙尘、简单整理，用好晚餐，再乘大巴直接前往辉腾锡勒草原。入住团队安排的蒙古包住宿，洗澡、休息，把车窗里的辽阔留到明早，舒舒服服迎接草原的一天。</p></div></div>
+<div class="schedule-row quest-row"><div class="time-col">Language Quest<span lang="zh-CN">今日中文任务</span></div><div class="text-col"><p class="en-text"><strong class="quest-name">Desert Adventure, My Chinese Edition</strong>Ask a member of staff about a camel, the moving sand or a favourite part of working here. Use one practised question or follow an answer further, then record your own Chinese description of a moment from the desert day.</p><p class="zh-text" lang="zh-CN"><strong class="quest-name">大漠中文闯关记</strong>向工作人员请教一个关于骆驼、沙丘或沙漠工作的问题。可以用一句练熟的提问，也可以顺着回答追问，再为今天的一个精彩瞬间录下自己的中文解说。</p></div></div>
+<div class="schedule-row dining-row"><div class="time-col">At the table<span lang="zh-CN">餐桌风味</span></div><div class="text-col"><p class="en-text"><strong class="dining-name">Desert-Day Meals &amp; Inner Mongolian Home Cooking</strong>Pause for a proper lunch in the park before returning to the day’s adventures. Dinner brings hearty local stews, vegetables and warm staples to the table, restoring energy before the coach journey into the grasslands.</p><p class="zh-text" lang="zh-CN"><strong class="dining-name">午餐：园区热餐 · 晚餐：内蒙古家常风味</strong>在园区坐下来吃好午餐、补充体力，再继续游玩。晚餐用当地炖菜、时蔬与温热主食照顾胃口，带着踏实的饱足感出发去草原。</p></div></div>
+</div></article>
+<article class="day-module" id="day-15" data-day="15" data-date="2027-08-05" aria-labelledby="day-title-15">
+<div class="day-header highlight"><div class="date-box"><span class="day-number">DAY 15</span><span class="date-day">THU</span><time class="date-num" datetime="2027-08-05" aria-label="Thursday 05 August 2027">5</time><span class="date-month">AUG</span></div><div class="day-title-wrap"><h3 class="day-title-en" id="day-title-15">Grassland Riding, Mongolian Flavours &amp; Stories to Take Home</h3><p class="day-title-zh" lang="zh-CN">草原清晨骑马，烤羊腿午宴与夜卧返京</p></div></div><div class="schedule-table">
+<div class="schedule-row"><div class="time-col">Morning<span lang="zh-CN">上午</span></div><div class="text-col"><p class="en-text">After breakfast, meet the riding team while the grassland morning is still cool. Learn to sit, hold the reins and communicate with your guide, then ride in groups suited to your experience. Look across the meadows, horses and distant wind turbines, and hear how local people describe the place they call home.</p><p class="zh-text" lang="zh-CN">早餐后趁草原清晨凉爽，跟随骑马教练学习坐姿、握缰与配合，按经验分组体验骑行。看看草甸、马群与远处的风车，也听当地人讲讲他们熟悉的生活，让辽阔的风景有了人的故事。</p></div></div>
+<div class="schedule-row"><div class="time-col">Lunch &amp; afternoon<span lang="zh-CN">午餐至下午</span></div><div class="text-col"><p class="en-text">Gather for roast lamb leg and a Mongolian-style lunch, asking your hosts about the food and traditions around the table. In the afternoon, travel by coach to Hohhot, take time to rest and organise luggage, then enjoy dinner before the journey back.</p><p class="zh-text" lang="zh-CN">午餐围桌分享烤羊腿与蒙餐，向主人请教食物背后的习惯和待客之道。下午乘大巴返回呼和浩特，留出休整、整理行李与晚餐时间，从容准备返京。</p></div></div>
+<div class="schedule-row"><div class="time-col">Evening &amp; overnight<span lang="zh-CN">晚间至夜间</span></div><div class="text-col"><p class="en-text">Board the overnight soft sleeper from Hohhot with your teachers. Settle in, share a favourite grassland moment with your friends and rest as the train carries everyone back towards Beijing.</p><p class="zh-text" lang="zh-CN">随老师在呼和浩特站登上返京夜卧列车，安顿好软卧床铺。和伙伴分享最喜欢的草原时刻，在列车的节奏里好好休息，迎接最后一天的告别。</p></div></div>
+<div class="schedule-row quest-row"><div class="time-col">Language Quest<span lang="zh-CN">今日中文任务</span></div><div class="text-col"><p class="en-text"><strong class="quest-name">My Grassland Partner</strong>Learn how your guide talks about a horse and ask one question about grassland life. Describe a moment when you learned to work together, using a few key words or a fuller story about the trust that grew along the way.</p><p class="zh-text" lang="zh-CN"><strong class="quest-name">我的草原搭档</strong>向教练学学怎样介绍一匹马，再请教一个草原生活的问题。说说自己怎样从紧张到放松、学会配合，可以用几个关键词，也可以讲成一段关于信任与默契的小故事。</p></div></div>
+<div class="schedule-row dining-row"><div class="time-col">At the table<span lang="zh-CN">餐桌风味</span></div><div class="text-col"><p class="en-text"><strong class="dining-name">Roast Lamb Leg &amp; a Mongolian Table</strong>Roast lamb leg, milk tea, oat-flour dishes and vegetables introduce the generous flavours of a grassland table. In Hohhot, a warm dinner with local dishes and staples brings a comfortable pause before the overnight train.</p><p class="zh-text" lang="zh-CN"><strong class="dining-name">午餐：草原烤羊腿与蒙餐 · 晚餐：呼和浩特风味</strong>烤羊腿、奶茶、莜面与蔬菜搭配成一桌草原风味，一边分享，一边认识当地的饮食习惯。晚餐在呼和浩特享用热菜与主食，吃好、歇一歇，再踏上回北京的夜车。</p></div></div>
+</div></article>
+</section>
+<section class="city-chapter" aria-labelledby="return-beijing-title"><div class="city-heading" id="return-beijing"><h2 id="return-beijing-title">Back in Beijing <span lang="zh-CN">返回北京</span></h2><span>DAY 16 · AUG 06</span><p class="city-tag-en">A warm goodbye, with new friendships and a wider world to take home.</p><p lang="zh-CN">带着新友谊与自己的中文故事，把辽阔中国带回家。</p></div>
+<article class="day-module" id="day-16" data-day="16" data-date="2027-08-06" aria-labelledby="day-title-16">
+<div class="day-header"><div class="date-box"><span class="day-number">DAY 16</span><span class="date-day">FRI</span><time class="date-num" datetime="2027-08-06" aria-label="Friday 06 August 2027">6</time><span class="date-month">AUG</span></div><div class="day-title-wrap"><h3 class="day-title-en" id="day-title-16">Back in Beijing, with a Wider World to Take Home</h3><p class="day-title-zh" lang="zh-CN">返回北京，把辽阔中国带回家</p></div></div><div class="schedule-table">
+<div class="schedule-row"><div class="time-col">Morning<span lang="zh-CN">上午</span></div><div class="text-col"><p class="en-text">Arrive at Beijing Fengtai Station in the morning and travel with the teachers to freshen up, shower and rest. Check your belongings, gather your camp creations and get ready for the journey home.</p><p class="zh-text" lang="zh-CN">早间抵达北京丰台站，随老师前往安排好的地点洗澡、休整。核对随身物品，收好这个夏天的作品与回忆，从容准备回家的旅程。</p></div></div>
+<div class="schedule-row"><div class="time-col">Departure<span lang="zh-CN">离营</span></div><div class="text-col"><p class="en-text">Say goodbye to your teachers and friends, with parent handovers or airport transfers arranged around each family’s confirmed plans. Take home new friendships, your own Chinese stories and the confidence to begin another conversation.</p><p class="zh-text" lang="zh-CN">按与各家庭确认的安排，完成家长接回或送机离营。和老师、伙伴告别，把新友谊、自己的中文故事，以及下一次愿意主动开口的勇气，一起带回家。</p></div></div>
+<div class="schedule-row quest-row"><div class="time-col">Language Quest<span lang="zh-CN">今日中文任务</span></div><div class="text-col"><p class="en-text"><strong class="quest-name">My China, in My Own Words</strong>Choose a film, a handmade piece or a remembered conversation to share with your family. Explain what it means to you, from a first brave greeting in Beijing to a new friendship on the grasslands.</p><p class="zh-text" lang="zh-CN"><strong class="quest-name">把辽阔中国带回家</strong>选一支短片、一件手作或一段难忘的交流，讲给家人听。从北京第一次勇敢开口，到草原上建立的新默契，让这一趟中国之旅有自己的声音。</p></div></div>
+<div class="schedule-row dining-row"><div class="time-col">Departure meals<span lang="zh-CN">离营餐食</span></div><div class="text-col"><p class="en-text"><strong class="dining-name">Breakfast &amp; Departure-Day Care</strong>Breakfast and further meals follow the group’s arrival and each student’s departure arrangements, with teachers making sure everyone has time to eat and prepare for the journey ahead.</p><p class="zh-text" lang="zh-CN"><strong class="dining-name">早餐与离营餐食照顾</strong>早餐及后续餐食结合列车抵达与各自离营安排衔接，老师照顾好用餐与整理时间，让孩子吃好、准备好，再踏上下一段旅程。</p></div></div>
+</div></article>
+</section>
+<section class="programme-notes" aria-labelledby="notes-title"><h2 class="eyebrow" id="notes-title">A thoughtfully planned summer · 关于这段旅程</h2><p class="en-text">This itinerary offers a picture of your child’s summer with RICH. We adapt the order to the weather, local arrangements and the pace of the group, while keeping the full programme of learning and experiences. There is room for the unexpected conversation or discovery that makes a day even richer.</p><p class="zh-text" lang="zh-CN">这份行程，描绘的是孩子与RICH共度夏天的样子。我们会结合天气、现场安排和孩子们的状态调整活动顺序，保留完整的学习与体验。也为途中一场有趣的交谈、一个意外的发现留出空间，让真正发生的夏天，比纸上的行程更丰富。</p></section><section class="enquiry" id="enquire" aria-labelledby="enquire-title"><p class="eyebrow">Your child’s next summer</p><h2 id="enquire-title">Begin with a conversation.</h2><p class="zh-text" lang="zh-CN">和我们聊聊孩子的中文起点、兴趣，以及你们期待的夏天。</p><a class="enquiry-link" href="mailto:richchinesesummercamp@gmail.com?subject=RICH%202027%20Beijing%20Session%204%20%7C%2022%20July%E2%80%936%20August">Talk to RICH about Beijing Session 4<span lang="zh-CN">咨询北京第四期</span></a></section></div><footer class="brochure-footer"><a class="footer-website" href="https://www.richcamps.com">www.richcamps.com</a><p class="footer-note">RICH · Chinese Summer Camp · Beijing to Inner Mongolia</p><div class="hub-return"><a href="index.html#beijing">← All sessions · <span lang="zh-CN">返回八期总览</span></a></div></footer></main><script>document.getElementById("print-itinerary").addEventListener("click", function () { window.print(); });</script></body></html>
