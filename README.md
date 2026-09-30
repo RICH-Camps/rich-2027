@@ -10,7 +10,9 @@
 - `shanghai-s1.html` 至 `shanghai-s4.html`：上海四期。
 - `版本对照.md`：原始文件映射、SHA-256 及内容保留核对。
 
-后续替换行程时保留稳定文件名，并同步总览中的日期、路线和版本对照。正文与原版行程保持一致，网站副本仅增加返回总览的导航和相应样式，并去掉禁止搜索引擎收录的 robots 标签。在线字体由 Google Fonts 加载；无网络时使用系统回退字体。
+后续替换行程时保留稳定文件名，并同步总览中的日期、路线和版本对照。正文与原版行程保持一致，网站副本增加返回总览的导航和相应样式，并去掉禁止搜索引擎收录的 robots 标签。2026-09-30 起，四款 Google 官方字体随网站一起托管：Cormorant Garamond、Montserrat、Noto Sans SC、Noto Serif SC。原有字重、斜体和排版保持不变。
+
+字体目录为 `assets/fonts/google-20260930/`，内含 `fonts.css`、217 个原版 WOFF2 字体文件、四份 SIL Open Font License 及 `SOURCES.json` 来源与哈希记录。HTML 和字体 CSS 均使用相对路径。复制、上传网站时请保留整个 `assets` 目录；不再依赖 Google Fonts 在线请求，缺少字体或尚未加载完成时使用原有系统回退字体。中文字体按官方字符区段按需加载，不会每页下载整个字体包。
 
 ## 网站发布与后续更新
 
