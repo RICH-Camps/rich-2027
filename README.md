@@ -1,3 +1,13 @@
+## Current release: 2026-10-13
+
+All ten pages now link prominently to the English and Chinese main website. Itinerary dates and daily activities are unchanged. Each page has a self-referencing canonical URL and structured WebPage/Organization metadata; robots.txt and sitemap.xml list the ten public URLs. The comparison page includes a static summary of all three routes.
+
+Active resources are in `assets/optimized-20261013/`: five shared font files (about 894 KB combined), page CSS, connections CSS, deferred scripts and SIL OFL licenses. The old 217-font package is obsolete after this release and can be recovered from Git history. The historical notes below describe the September baseline, not the current active assets.
+
+Regenerate the Chinese font subsets after adding characters; do not reuse the main website's smaller homepage subset. Use a new versioned asset directory when changing cached resources. The website remains plain static HTML, without a build or runtime dependency. Serve through HTTP for local previews because overview links use `/`.
+
+`vercel.json` permanently redirects `/index.html` to `/`, redirects the public default Vercel hostname to the custom domain, and gives versioned assets long browser caching. No DNS, plan, security or hosting-provider changes are part of this release.
+
 # RICH 2027 八期行程网站
 
 双击 `index.html` 打开八期总览。点击北京或上海的期次卡片进入完整行程；详情页顶部与页脚可返回总览。页面可直接在浏览器打开，无需安装依赖或构建。
