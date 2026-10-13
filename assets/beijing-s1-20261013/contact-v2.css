@@ -1,0 +1,59 @@
+/* Contact cards and sheet styles reused from the RICH main homepage. */
+.session-ending,.rich-contact,.rich-chat-bubble{font-family:"Montserrat","Noto Sans SC",sans-serif}
+.session-ending{margin:0 44px;padding:40px 0 32px;border-top:1px solid #d9dce0;color:#1a2e44;text-align:center}
+.session-ending .eyebrow{font-size:10px;letter-spacing:1.8px;margin:0 0 14px}.session-ending h2{font:600 34px/1.15 "Cormorant Garamond",serif;margin:0 0 14px}.session-ending .zh-text{font-size:12px;line-height:1.9;margin:0 auto 24px;max-width:480px}
+.ending-talk{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:15px 22px;color:white;background:#8c2131;border-radius:4px;font-size:12px;font-weight:500;text-decoration:none}.ending-talk span[lang]{font-size:11px}.ending-talk:hover{background:#711a29}
+.ending-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 28px;margin:32px auto 24px;max-width:620px}.ending-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;color:inherit;font-size:11px;text-decoration:none;line-height:1.6}
+.ending-base{display:flex;flex-direction:column;align-items:center;gap:28px}.ending-base a{color:#64717e;text-decoration:none;font-size:10px;min-height:44px;display:inline-flex;align-items:center}.ending-base .ending-brand{order:-1;display:block;color:#1a2e44;font:600 26px/1 "Cormorant Garamond",serif;letter-spacing:3px;min-height:0}.ending-brand span{display:block;font:8px/1.5 "Montserrat",sans-serif;letter-spacing:1.5px;margin-top:7px}
+.ending-nav a:hover,.ending-base a:hover{color:#8c2131}.session-ending a:focus-visible,.rich-chat-bubble:focus-visible{outline:2px solid #8c2131;outline-offset:4px}
+.rich-chat-bubble{position:fixed;bottom:calc(22px + env(safe-area-inset-bottom,0px));right:22px;z-index:30;background:#8c2131;color:#fff;box-shadow:0 4px 18px #11202f26;border-radius:32px;display:flex;align-items:center;justify-content:center;gap:9px;padding:14px 18px;text-decoration:none;font-size:11px;font-weight:600;min-height:48px;box-sizing:border-box}.rich-chat-bubble svg{width:24px;height:24px;fill:currentColor}.rich-chat-bubble:hover{background:#711a29}
+
+.rich-contact{--line:#e3e5e9;--navy:#1a2e44;--navy-deep:#11202f;--crimson:#8c2131;--muted:#6d7882;box-sizing:border-box;position:fixed;inset:auto 0 0;margin:0 auto;width:min(100%,520px);max-width:100%;max-height:calc(100dvh - 24px);padding:13px 24px calc(25px + env(safe-area-inset-bottom));border:1px solid rgba(255,255,255,.72);border-bottom:0;border-radius:28px 28px 0 0;background:#fdfbf7;color:var(--navy);box-shadow:0 -24px 72px rgba(7,20,35,.26);overflow-y:auto;overscroll-behavior:contain}
+.rich-contact:not([open]){display:none}.rich-contact::backdrop{background:rgba(8,22,38,.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}.rich-contact *{box-sizing:border-box}.rich-contact-open{overflow:hidden}
+  .contact-sheet__grabber{width:38px;height:4px;margin:0 auto 22px;border-radius:999px;background:rgba(26,46,68,.16)}
+  .contact-sheet__close{position:absolute;top:22px;right:22px;display:grid;place-items:center;width:36px;height:36px;padding:0;border:1px solid var(--line);border-radius:50%;background:#fff;color:var(--navy);cursor:pointer}
+  .contact-sheet__close svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round}
+  .contact-sheet__eyebrow{margin:0 48px 10px 0;color:var(--crimson);font-size:10px;font-weight:600;letter-spacing:.18em}
+  .contact-sheet h2{margin:0;color:var(--navy);font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;line-height:1.45;letter-spacing:.025em}
+  .contact-sheet__intro{margin:9px 0 22px;color:var(--muted);font-size:12.5px;line-height:1.7}
+  .contact-sheet__choices{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .contact-choice{display:flex;min-width:0;min-height:96px;align-items:center;gap:13px;padding:17px 15px;border:1px solid var(--line);border-radius:18px;background:#fff;color:var(--navy);font:inherit;text-align:left;text-decoration:none;cursor:pointer;transition:transform .2s,border-color .2s,box-shadow .2s,background .2s}
+  .contact-choice--wechat[aria-expanded="true"]{border-color:rgba(140,33,49,.3);background:#f8f2ed;box-shadow:0 10px 28px rgba(18,38,57,.08)}
+  .contact-choice__icon{display:grid;place-items:center;flex:0 0 38px;width:38px;height:38px;border-radius:50%;background:var(--navy-deep);color:#fff}
+  .contact-choice--whatsapp .contact-choice__icon{background:var(--crimson)}
+  .contact-choice--email{grid-column:1/-1;min-height:70px;padding-top:13px;padding-bottom:13px}
+  .contact-choice--email .contact-choice__icon{background:#eee8df;color:var(--navy)}
+  .contact-choice--email .contact-choice__copy{flex:1}
+  .contact-choice--email .contact-choice__copy small{overflow-wrap:anywhere}
+  .contact-choice--email .contact-choice__arrow{flex:0 0 auto;color:var(--crimson);font-family:Montserrat,sans-serif;font-size:18px;font-weight:400}
+  .contact-choice__icon svg{width:21px;height:21px;fill:currentColor}
+  .contact-choice__copy{display:flex;min-width:0;flex-direction:column;gap:4px}
+  .contact-choice__copy strong{font-size:14px;font-weight:600;letter-spacing:.025em}
+  .contact-choice__copy small{color:var(--muted);font-size:10.5px;line-height:1.45}
+  .contact-sheet__wechat{display:grid;grid-template-columns:138px 1fr;gap:19px;align-items:center;margin-top:14px;padding:17px;border:1px solid var(--line);border-radius:18px;background:#fff}
+  .contact-sheet__wechat[hidden]{display:none}
+  .contact-sheet__qr{display:block;width:138px;height:138px;padding:7px;border:1px solid #ece9e2;border-radius:14px;background:#fff;object-fit:contain}
+  .contact-sheet__wechat-label{margin:0 0 3px;color:var(--muted);font-size:10px;letter-spacing:.13em;text-transform:uppercase}
+  .contact-sheet__wechat-id{margin:0 0 11px;color:var(--navy);font-family:Montserrat,sans-serif;font-size:16px;font-weight:600;letter-spacing:.02em}
+  .contact-sheet__copy-button{min-height:38px;padding:0 14px;border:0;border-radius:999px;background:var(--navy);color:#fff;font:600 11.5px Montserrat,sans-serif;letter-spacing:.035em;cursor:pointer}
+  .contact-sheet__status{display:block;min-height:18px;margin-top:6px;color:var(--crimson);font-size:10.5px}
+  .contact-sheet :focus-visible{outline:3px solid rgba(140,33,49,.28);outline-offset:3px}
+  body.contact-sheet-open{overflow:hidden}
+  @media(hover:hover){
+    .contact-choice:hover{transform:translateY(-2px);border-color:rgba(26,46,68,.24);box-shadow:0 10px 26px rgba(18,38,57,.08)}
+  }
+  @media(max-width:370px){
+    .rich-contact{padding-left:18px;padding-right:18px}
+    .contact-sheet__choices{gap:9px}
+    .contact-choice{gap:9px;padding:14px 11px}
+    .contact-choice__icon{flex-basis:34px;width:34px;height:34px}
+    .contact-sheet__wechat{grid-template-columns:120px 1fr;gap:14px;padding:14px}
+    .contact-sheet__qr{width:120px;height:120px}
+  }
+
+
+.rich-contact h2{font-size:32px;font-weight:600;line-height:1.15;letter-spacing:normal}.rich-contact .contact-sheet__close{width:36px;height:36px}.rich-contact .contact-choice__copy strong{font-weight:500;letter-spacing:normal}
+@media(max-width:600px){.session-ending{margin:0 19px;padding:30px 0 72px}.session-ending h2{font-size:30px}.session-ending .zh-text{max-width:315px}.ending-nav{display:grid;grid-template-columns:1fr 1fr;column-gap:18px;row-gap:0;margin:24px 0 22px}.ending-base{gap:18px}.ending-talk{gap:10px;padding:14px 18px}.rich-chat-bubble{right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:50px;height:50px;padding:13px}.rich-chat-bubble span{display:none}.rich-contact h2{font-size:30px}}
+@media(max-width:370px){.rich-contact .contact-choice__copy strong{font-size:12px}.rich-contact .contact-choice__copy small{font-size:10px}.rich-contact .contact-sheet__wechat{grid-template-columns:100px 1fr;padding:12px;gap:12px}.rich-contact .contact-sheet__qr{width:100px;height:100px}.contact-sheet__wechat-id{font-size:14px}.ending-talk{font-size:11px}}
+@media print{.session-ending,.rich-chat-bubble,.rich-contact{display:none!important}}
+@media(prefers-reduced-motion:reduce){.rich-contact *{transition:none!important}}
