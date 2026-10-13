@@ -1,0 +1,1 @@
+document.getElementById("print-itinerary").addEventListener("click", function () { window.print(); });

@@ -1,0 +1,10 @@
+
+.rich-bridge{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;max-width:1080px;margin:0 auto;padding:16px 24px;border-bottom:1px solid #deddd7;color:#1a2e44;font:500 12px/1.6 "Montserrat","Noto Sans SC",sans-serif}
+.rich-brand{font:700 30px/1 "Cormorant Garamond",serif;letter-spacing:3px;text-decoration:none;color:inherit}
+.rich-brand small{display:block;margin-top:7px;font:500 9px/1.3 "Montserrat",sans-serif;letter-spacing:2px}
+.rich-links{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px}.rich-links a{padding:6px 0;text-decoration:none;color:inherit}.rich-links a:hover{text-decoration:underline;text-underline-offset:4px}
+.rich-footer-links{display:flex;justify-content:center;gap:8px 22px;flex-wrap:wrap;padding:20px 16px;border-top:1px solid #deddd7;font:500 12px/1.6 "Montserrat","Noto Sans SC",sans-serif;color:#1a2e44}.rich-footer-links a{color:inherit;text-decoration:none;padding:6px 0}.rich-footer-links a:hover{text-decoration:underline}
+.rich-bridge a:focus-visible,.rich-footer-links a:focus-visible{outline:2px solid #8d3542;outline-offset:4px}
+.route-summary{margin-top:28px;border:1px solid #deddd7;padding:20px}.route-summary summary{cursor:pointer;font-weight:600}.route-summary dl{margin:16px 0 0}.route-summary dt{font-weight:600;margin-top:16px}.route-summary dd{margin:4px 0;font-size:13px;line-height:1.8}
+@media(max-width:600px){.rich-bridge{padding:16px 20px;gap:12px}.rich-links{font-size:11px;gap:5px 15px}.rich-footer-links{font-size:11px}.top-nav{flex-wrap:wrap!important;justify-content:flex-start!important;gap:8px 18px!important}.top-nav a{padding:5px 0}.masthead{padding:20px 0!important;flex-wrap:wrap!important}.topbar .wrap{flex-wrap:wrap;gap:16px}.topbar .nav{flex-wrap:wrap;gap:10px}.rich-bridge .rich-links{width:100%}}
+@media print{.rich-bridge,.rich-footer-links{display:none!important}}
