@@ -1,3 +1,13 @@
+## Search and link review: 2026-10-16
+
+All ten public pages have been reviewed against the deployed main website. The eight itinerary footers now provide the corresponding city's English and Chinese dates/fees pages, plus both application guides. The 2026 comparison references intentionally remain on the historical 2026 website. No development hostname was found in the current baseline; keep all public links on production hosts.
+
+Page titles, descriptions, Open Graph and Twitter metadata are consistent. WebPage/CollectionPage metadata includes the itinerary's actual date range and places where applicable, with related links to authoritative fees and application pages. Daily activities, session-specific enquiries and comparison figures are unchanged. Bilingual content shares one URL, so it is not labelled as two separate hreflang versions. No AI-only files, ratings or invented event offers are used.
+
+The active font stylesheet is `assets/search-20261016/fonts.css`. It loads two refreshed Chinese subsets (including the fee-navigation character 费) and reuses the three existing Latin files. Pages still load at most five shared font files. Earlier versioned resources remain available for cached pages.
+
+Run `python3 check_site.py` before publishing to validate links, fragments, metadata, JSON-LD, sitemap coverage and date ranges. Recheck production responses after Vercel deploys. Use new names for modified assets under immutable cache paths.
+
 ## Current release: 2026-10-13
 
 All ten pages now link prominently to the English and Chinese main website. Itinerary dates and daily activities are unchanged. Each page has a self-referencing canonical URL and structured WebPage/Organization metadata; robots.txt and sitemap.xml list the ten public URLs. The comparison page includes a static summary of all three routes.
