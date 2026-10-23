@@ -1,0 +1,105 @@
+RICH 2027 SiteGround deployment reference — 2026-10-24
+No private configuration or credentials.
+
+
+=== .htaccess ===
+Options -Indexes
+DirectoryIndex delivery.php
+RewriteEngine On
+RewriteCond %{THE_REQUEST} \s/+itineraries/2027/index\.html(?:[?\s]) [NC]
+RewriteRule ^index\.html$ /itineraries/2027/ [R=301,L]
+RewriteRule ^$ delivery.php [END]
+RewriteRule ^(?:index|beijing-s[1-4]|shanghai-s[1-4]|compare-2026-2027)\.html$ delivery.php [END]
+RewriteRule ^sitemap\.xml$ delivery.php [END]
+
+
+=== README.txt ===
+SiteGround deployment: HTML/XML -> /richcamps.com/rich-itinerary-content-20261024/; assets and these delivery files -> /richcamps.com/public_html/itineraries/2027/. Keep existing main root and family settings. Root route required before other main routing: RewriteRule ^itineraries/2027/$ itineraries/2027/delivery.php [END]. Resources remain direct, long cache. Documents revalidate. Validate all ten pages before enabling vercel.json redirects. Rollback: restore before-git.bundle base dbf6ec84f28d833456dfda684ecf020bdd9432cf and main-before snapshots/root .htaccess; do not remove family files.
+
+
+=== delivery.php ===
+<?php
+// RICH public document delivery. No sessions, databases, includes or asset handling.
+// Content lives outside public_html; deploy HTML/XML/TXT updates there.
+$allowed = ['beijing-s1.html', 'shanghai-s2.html', 'index.html', 'shanghai-s3.html', 'shanghai-s4.html', 'compare-2026-2027.html', 'beijing-s4.html', 'beijing-s3.html', 'shanghai-s1.html', 'beijing-s2.html', 'sitemap.xml'];
+$path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
+$prefix = '/itineraries/2027/';
+$key = str_starts_with((string)$path, $prefix) ? substr($path, strlen($prefix)) : '';
+if ($path === $prefix) $key = 'index.html';
+if (!in_array($key, $allowed, true)) {
+    http_response_code(404); header('Cache-Control: no-store'); exit;
+}
+$method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
+if (!in_array($method, ['GET', 'HEAD'], true)) {
+    http_response_code(405); header('Allow: GET, HEAD'); header('Cache-Control: no-store'); exit;
+}
+$file = dirname(__DIR__, 3) . '/rich-itinerary-content-20261024/' . $key;
+if (!is_file($file) || !is_readable($file)) {
+    http_response_code(503); header('Cache-Control: no-store'); header('Retry-After: 60'); exit;
+}
+$type = substr($key, -4) === '.xml' ? 'application/xml' : ($key === 'robots.txt' ? 'text/plain' : 'text/html');
+$etag = '"' . hash_file('sha256', $file) . '"';
+$modified = min(filemtime($file), filectime($file), time());
+header('Content-Type: ' . $type . '; charset=utf-8');
+header('Cache-Control: no-cache, max-age=0, must-revalidate');
+header('Expires: Thu, 01 Jan 1970 00:00:00 GMT');
+header('ETag: ' . $etag);
+header('Last-Modified: ' . gmdate('D, d M Y H:i:s', $modified) . ' GMT');
+header('X-Content-Type-Options: nosniff');
+$match = $_SERVER['HTTP_IF_NONE_MATCH'] ?? null;
+$unchanged = false;
+if ($match !== null) {
+    foreach (explode(',', $match) as $candidate) {
+        $candidate = trim($candidate);
+        if ($candidate === '*' || preg_replace('/^W\//', '', $candidate) === $etag) $unchanged = true;
+    }
+} elseif (isset($_SERVER['HTTP_IF_MODIFIED_SINCE'])) {
+    $since = strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE']);
+    $unchanged = $since !== false && $since >= $modified;
+}
+if ($unchanged) { http_response_code(304); exit; }
+if ($method !== 'HEAD') readfile($file);
+
+
+=== index.php ===
+<?php
+// RICH public document delivery. No sessions, databases, includes or asset handling.
+// Content lives outside public_html; deploy HTML/XML/TXT updates there.
+$allowed = ['beijing-s1.html', 'shanghai-s2.html', 'index.html', 'shanghai-s3.html', 'shanghai-s4.html', 'compare-2026-2027.html', 'beijing-s4.html', 'beijing-s3.html', 'shanghai-s1.html', 'beijing-s2.html', 'sitemap.xml'];
+$path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
+$prefix = '/itineraries/2027/';
+$key = str_starts_with((string)$path, $prefix) ? substr($path, strlen($prefix)) : '';
+if ($path === $prefix) $key = 'index.html';
+if (!in_array($key, $allowed, true)) {
+    http_response_code(404); header('Cache-Control: no-store'); exit;
+}
+$method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
+if (!in_array($method, ['GET', 'HEAD'], true)) {
+    http_response_code(405); header('Allow: GET, HEAD'); header('Cache-Control: no-store'); exit;
+}
+$file = dirname(__DIR__, 3) . '/rich-itinerary-content-20261024/' . $key;
+if (!is_file($file) || !is_readable($file)) {
+    http_response_code(503); header('Cache-Control: no-store'); header('Retry-After: 60'); exit;
+}
+$type = substr($key, -4) === '.xml' ? 'application/xml' : ($key === 'robots.txt' ? 'text/plain' : 'text/html');
+$etag = '"' . hash_file('sha256', $file) . '"';
+$modified = min(filemtime($file), filectime($file), time());
+header('Content-Type: ' . $type . '; charset=utf-8');
+header('Cache-Control: no-cache, max-age=0, must-revalidate');
+header('Expires: Thu, 01 Jan 1970 00:00:00 GMT');
+header('ETag: ' . $etag);
+header('Last-Modified: ' . gmdate('D, d M Y H:i:s', $modified) . ' GMT');
+header('X-Content-Type-Options: nosniff');
+$match = $_SERVER['HTTP_IF_NONE_MATCH'] ?? null;
+$unchanged = false;
+if ($match !== null) {
+    foreach (explode(',', $match) as $candidate) {
+        $candidate = trim($candidate);
+        if ($candidate === '*' || preg_replace('/^W\//', '', $candidate) === $etag) $unchanged = true;
+    }
+} elseif (isset($_SERVER['HTTP_IF_MODIFIED_SINCE'])) {
+    $since = strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE']);
+    $unchanged = $since !== false && $since >= $modified;
+}
+if ($unchanged) { http_response_code(304); exit; }
+if ($method !== 'HEAD') readfile($file);
