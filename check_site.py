@@ -4,7 +4,7 @@ from html.parser import HTMLParser
 from urllib.parse import urlsplit,unquote,urljoin
 import re,json,xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parent
-ORIGIN='https://2027.richcamps.com/'
+ORIGIN='https://www.richcamps.com/itineraries/2027/'
 class Page(HTMLParser):
  def __init__(self,s):
   super().__init__();self.tags=[];self.ids=[];self.feed(s)
@@ -39,8 +39,8 @@ def check():
     u=d.get(attr,'');url=urlsplit(urljoin(canonical,u))
     if not u or url.scheme not in ('http','https'):continue
     assert url.hostname!='dev.richcamps.com',p.name
-    if url.hostname!='2027.richcamps.com':continue
-    local=unquote(url.path).lstrip('/') or 'index.html'
+    if url.hostname!='www.richcamps.com' or not url.path.startswith('/itineraries/2027/'):continue
+    local=unquote(url.path)[len('/itineraries/2027/'):] or 'index.html'
     assert (ROOT/local).is_file(),('missing file',p.name,u)
     if url.fragment and local.endswith('.html'):assert unquote(url.fragment) in parsed[local].ids,('missing anchor',p.name,u)
   for css in re.findall(r'<link rel="stylesheet" href="([^"]+)"',s):

@@ -1,3 +1,8 @@
+## Production migration: 2026-10-24
+Canonical itineraries now live at https://www.richcamps.com/itineraries/2027/ on SiteGround. This GitHub repository remains the version-controlled source. Vercel and 2027.richcamps.com remain active as per-page permanent redirects; do not remove the project, domain or old versioned assets.
+Deploy HTML to rich-itinerary-content-20261024 outside public_html; public assets and isolated delivery routes live under public_html/itineraries/2027/. Main-site links and sitemap are deployed separately. No family database/config changes.
+Use new filenames for changed cached assets. Preserve bilingual copy, dates and anchors. The migration archive includes deployment/rollback manifests and validation evidence.
+
 ## Search and link review: 2026-10-16
 
 All ten public pages have been reviewed against the deployed main website. The eight itinerary footers now provide the corresponding city's English and Chinese dates/fees pages, plus both application guides. The 2026 comparison references intentionally remain on the historical 2026 website. No development hostname was found in the current baseline; keep all public links on production hosts.

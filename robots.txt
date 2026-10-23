@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://2027.richcamps.com/sitemap.xml
+Sitemap: https://www.richcamps.com/itineraries/2027/sitemap.xml

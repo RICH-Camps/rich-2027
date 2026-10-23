@@ -1,19 +1,63 @@
 {
   "redirects": [
     {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "rich-2027.vercel.app"
-        }
-      ],
-      "destination": "https://2027.richcamps.com/:path*",
+      "source": "/",
+      "destination": "https://www.richcamps.com/itineraries/2027/",
       "permanent": true
     },
     {
       "source": "/index.html",
-      "destination": "/",
+      "destination": "https://www.richcamps.com/itineraries/2027/",
+      "permanent": true
+    },
+    {
+      "source": "/beijing-s1.html",
+      "destination": "https://www.richcamps.com/itineraries/2027/beijing-s1.html",
+      "permanent": true
+    },
+    {
+      "source": "/shanghai-s2.html",
+      "destination": "https://www.richcamps.com/itineraries/2027/shanghai-s2.html",
+      "permanent": true
+    },
+    {
+      "source": "/shanghai-s3.html",
+      "destination": "https://www.richcamps.com/itineraries/2027/shanghai-s3.html",
+      "permanent": true
+    },
+    {
+      "source": "/shanghai-s4.html",
+      "destination": "https://www.richcamps.com/itineraries/2027/shanghai-s4.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare-2026-2027.html",
+      "destination": "https://www.richcamps.com/itineraries/2027/compare-2026-2027.html",
+      "permanent": true
+    },
+    {
+      "source": "/beijing-s4.html",
+      "destination": "https://www.richcamps.com/itineraries/2027/beijing-s4.html",
+      "permanent": true
+    },
+    {
+      "source": "/beijing-s3.html",
+      "destination": "https://www.richcamps.com/itineraries/2027/beijing-s3.html",
+      "permanent": true
+    },
+    {
+      "source": "/shanghai-s1.html",
+      "destination": "https://www.richcamps.com/itineraries/2027/shanghai-s1.html",
+      "permanent": true
+    },
+    {
+      "source": "/beijing-s2.html",
+      "destination": "https://www.richcamps.com/itineraries/2027/beijing-s2.html",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "https://www.richcamps.com/itineraries/2027/sitemap.xml",
       "permanent": true
     }
   ],
