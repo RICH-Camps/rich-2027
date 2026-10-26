@@ -3,6 +3,21 @@ from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit,unquote,urljoin
 import re,json,xml.etree.ElementTree as ET
+from urllib.request import Request, urlopen
+REMOTE_CHECKED=set()
+REMOTE_CSS={}
+def shared_css(url):
+ assert urlsplit(url).hostname=='www.richcamps.com',('unexpected stylesheet host',url)
+ if url not in REMOTE_CSS:
+  with urlopen(Request(url,headers={'User-Agent':'Mozilla/5.0'}),timeout=30) as response:
+   REMOTE_CSS[url]=response.read().decode('utf-8')
+ return REMOTE_CSS[url]
+def check_shared_asset(url):
+ assert urlsplit(url).hostname=='www.richcamps.com',('unexpected font host',url)
+ if url not in REMOTE_CHECKED:
+  with urlopen(Request(url,method='HEAD',headers={'User-Agent':'Mozilla/5.0'}),timeout=30) as response:
+   assert response.status==200,('missing shared asset',url)
+  REMOTE_CHECKED.add(url)
 ROOT=Path(__file__).resolve().parent
 ORIGIN='https://www.richcamps.com/itineraries/2027/'
 class Page(HTMLParser):
@@ -44,9 +59,13 @@ def check():
     assert (ROOT/local).is_file(),('missing file',p.name,u)
     if url.fragment and local.endswith('.html'):assert unquote(url.fragment) in parsed[local].ids,('missing anchor',p.name,u)
   for css in re.findall(r'<link rel="stylesheet" href="([^"]+)"',s):
+   remote=css.startswith(('https://','http://'))
    path=ROOT/css
-   for asset in re.findall(r'url\([\"\']?([^\)\"\']+)',path.read_text()):
-    if not asset.startswith(('data:','http')):assert (path.parent/asset).is_file(),('missing css asset',asset)
+   content=shared_css(css) if remote else path.read_text()
+   for asset in re.findall(r'url\([\"\']?([^\)\"\']+)',content):
+    if asset.startswith('data:'):continue
+    if remote:check_shared_asset(urljoin(css,asset))
+    elif not asset.startswith('http'):assert (path.parent/asset).is_file(),('missing css asset',asset)
   if re.fullmatch(r'(beijing|shanghai)-s[1-4]\.html',p.name):
    assert s.count('class="day-module')==16,p.name
    start,end=page['temporalCoverage'].split('/');from datetime import date
