@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en"><head>
+<link rel="preload" as="font" type="font/woff2" href="/itineraries/2027/assets/optimized-20261013/montserrat-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/itineraries/2027/assets/optimized-20261013/cormorant-latin.woff2" crossorigin>
+
 <!-- Google tag (gtag.js) | RICH GA4 | 2026-10-19 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GT-NSV79333"></script>
 <script>
@@ -39,46 +42,56 @@
 @media(max-width:760px){.brief-tag{font-size:12px;min-height:54px}.brief-day{min-height:235px}.brief-day p{font-size:12px}.brief-note{font-size:12px}.brief-facts{margin-bottom:0}}
 
 /* V3: trip identity left, story right; bookmark entry beside all sessions */
-.hub-return{display:flex;align-items:center;justify-content:flex-start;gap:22px;flex-wrap:wrap}
-.hub-return .brief-trigger{position:relative;display:inline-flex;align-items:center;gap:9px;padding:9px 16px 9px 12px;border:1px solid #ddd1c2;border-left:3px solid #8c2131;border-radius:2px 9px 2px 2px;background:#f5efe4;box-shadow:0 2px 4px #182b3d09;font-size:12px;font-weight:500;letter-spacing:.1px;transition:background .18s,border-color .18s}
-.hub-return .brief-trigger:hover{background:#eee4d4;border-color:#b99479}
-.hub-return .brief-trigger svg{width:16px;height:19px;fill:none;stroke:currentColor;stroke-width:1.15;stroke-linejoin:round}
-.hub-return .brief-trigger span{margin:0}.hub-return .brief-trigger span[lang]{margin-left:5px}
+
+
+
+
+
 .brief-intro{display:grid;grid-template-columns:minmax(230px,.8fr) minmax(0,1.4fr);gap:48px;align-items:center}
 .brief-route{align-items:flex-start;gap:1px}.brief-route strong{font-size:23px}.brief-route>span:last-child{margin-top:3px}
 .brief-identity .brief-kicker{margin-bottom:13px}
 .brief-story{justify-self:end;max-width:610px;text-align:left}
 .brief-story h2{font-size:27px;margin-bottom:10px}
-@media(max-width:760px){.brief-intro{grid-template-columns:1fr;gap:20px}.brief-story{justify-self:start}.brief-route{margin-top:0}.brief-route>span:nth-child(2){display:block}.brief-route strong{font-size:21px}.brief-story h2{font-size:24px}.hub-return{gap:12px}.hub-return .brief-trigger{font-size:11px;padding:7px 10px}}
+@media(max-width:760px){.brief-intro{grid-template-columns:1fr;gap:20px}.brief-story{justify-self:start}.brief-route{margin-top:0}.brief-route>span:nth-child(2){display:block}.brief-route strong{font-size:21px}.brief-story h2{font-size:24px}}
 @media print{.trip-brief{display:none!important}}
 
 /* V4: paired text navigation */
-.hub-return{justify-content:space-between;gap:12px}
-.hub-return .brief-trigger{border:0;border-radius:0;box-shadow:none;background:transparent;padding:6px 0;gap:7px;font:inherit;letter-spacing:0;color:#8c2131}
-.hub-return .brief-trigger:hover{background:transparent;text-decoration:underline;text-underline-offset:4px}
-.hub-return .brief-trigger svg{width:16px;height:14px;stroke-width:1.4}
-.hub-return .brief-trigger span[lang]{margin-left:3px}
-.brief-route strong{white-space:nowrap;font-size:21px}
-@media(max-width:760px){.brief-route strong{font-size:19px}.hub-return .brief-trigger{padding:6px 0;font:inherit}}
 
-.hub-return{justify-content:flex-start;gap:24px}.brief-trigger:focus-visible{outline:2px solid #8c2131;outline-offset:4px}.brief-route strong{font-size:20px}.brief-story{max-width:610px}@media(max-width:760px){.hub-return{gap:6px 18px}.brief-route strong{font-size:18px}}
+
+
+
+
+.brief-route strong{white-space:nowrap;font-size:21px}
+@media(max-width:760px){.brief-route strong{font-size:19px}}
+
+.brief-trigger:focus-visible{outline:2px solid #8c2131;outline-offset:4px}.brief-route strong{font-size:20px}.brief-story{max-width:610px}@media(max-width:760px){.brief-route strong{font-size:18px}}
 
 /* Safari-safe arrows, static brand, one continuous bilingual entry underline. */
 .brief-arrow{width:1em;height:1em;display:inline-block;vertical-align:-.12em;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
 .brief-go{line-height:1}.brief-go .brief-arrow{width:16px;height:16px}
 .brief-hint .brief-arrow{margin-left:4px}
-.hub-return .brief-trigger:hover{ text-decoration:none }
-.hub-return .brief-trigger>span{border-bottom:1px solid transparent;padding-bottom:2px;text-decoration:none}
-.hub-return .brief-trigger span[lang]{margin-left:0;text-decoration:none}
-.hub-return .brief-trigger>span{font-family:inherit}
-.hub-return .brief-trigger span[lang]{font-family:var(--font-sans-zh)}
-@media(hover:hover){.hub-return .brief-trigger:hover>span{border-bottom-color:currentColor}}
-.hub-return .brief-trigger:focus-visible>span{border-bottom-color:currentColor}
+
+
+
+
+
+
+
 #brief-title:focus{outline:none}
 .brief-toolbar{background:#fdfbf7}
-</style></head><body>
+</style>
+<style id="rich-session-links">
+/* The return link and dialog button share the same inline text treatment. */
+.hub-return{display:flex;align-items:baseline;justify-content:flex-start;gap:6px 24px;flex-wrap:wrap}
+.hub-return>a,.hub-return>.brief-trigger{display:inline-block;appearance:none;-webkit-appearance:none;vertical-align:baseline;margin:0;padding:6px 0;border:0;border-radius:0;box-shadow:none;background:transparent;font:inherit;letter-spacing:inherit;line-height:inherit;text-align:left;text-decoration:none;color:inherit;cursor:pointer}
+.hub-return>.brief-trigger{color:#8c2131}
+.hub-return>a:hover,.hub-return>.brief-trigger:hover{text-decoration:underline;text-underline-offset:4px}
+.hub-return>.brief-trigger svg{display:inline-block;width:16px;height:14px;margin-left:7px;vertical-align:-2px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linejoin:round}
+@media(max-width:760px){.hub-return{gap:6px 18px}}
+</style>
+</head><body>
 <a class="skip-link" href="#shanghai">Skip to the itinerary · 跳转每日行程</a>
-<nav class="hub-return" aria-label="All sessions"><a href="/itineraries/2027/#shanghai">← All sessions · <span lang="zh-CN">全部营期</span></a><button class="brief-trigger" type="button" aria-haspopup="dialog" aria-controls="trip-brief"><span>Session 3 at a glance · <span lang="zh-CN">上海第三期简报</span></span><svg viewBox="0 0 20 16" aria-hidden="true"><path d="M2 8h15 M12 3l5 5-5 5"/></svg></button></nav>
+<nav class="hub-return" aria-label="All sessions"><a href="/itineraries/2027/#shanghai">← All sessions · <span lang="zh-CN">全部营期</span></a><button class="brief-trigger" type="button" aria-haspopup="dialog" aria-controls="trip-brief">Session 3 at a glance · <span lang="zh-CN">上海第三期简报</span><svg viewBox="0 0 20 16" aria-hidden="true"><path d="M2 8h15 M12 3l5 5-5 5"/></svg></button></nav>
 <nav class="preview-bar" aria-label="Itinerary navigation"><span class="preview-label">RICH · SUMMER 2027 · SHANGHAI SESSION 03</span><div class="preview-links"><a href="#daily-rhythm">Our day 一天</a><a href="#shanghai">Shanghai 上海</a><a href="#chengdu">Chengdu 成都</a><button class="print-button" type="button" id="print-itinerary">Print 打印</button></div></nav>
 <main class="page" id="top"><header class="brochure-header"><h1 class="header-title-en">Shanghai Chinese Summer Camp 2027 · Session 3</h1><p class="header-location-en">Shanghai to Chengdu</p><p class="header-title-zh" lang="zh-CN">上海第三期 · 海派生活 · 天府发现</p><div class="header-meta">SHANGHAI SESSION 3 | JUL 06 — JUL 21, 2027 | 16 DAYS</div><p class="header-route">Arrive in Shanghai · Depart from Shanghai<span lang="zh-CN">上海入营 · 返沪离营 · <time class="header-date" datetime="2027-07-06">2027年7月6日至21日</time></span></p></header>
 <div class="content-wrap"><section class="method-intro" aria-labelledby="method-title"><p class="eyebrow">The RICH Summer</p><h2 id="method-title">From Shanghai’s leafy lanes to new friends over tea in Chengdu.</h2><p class="section-title-zh" lang="zh-CN">从梧桐树下的初相识，到成都茶馆里的新朋友</p><p class="en-text">Ask a shopkeeper about a favourite neighbourhood, learn a careful fold from a xiaolongbao chef and send a Chinese postcard from a Jiangnan water town. In Chengdu, meet your Beijing campmates, work together on a panda conservation experience and share a conversation over tea. With teachers helping each child find the words, everyday encounters become stories—and places once unfamiliar begin to feel personal.</p><p class="zh-text" lang="zh-CN">从武康路的一家小店聊起，在师傅身边学捏小笼，再从朱家角寄出一张自己的中文明信片。到了成都，和北京营伙伴一起参与熊猫守护，跟竹编师傅学一招，坐进人民公园的茶香里听当地人聊日常。老师陪孩子从适合自己的问题开始，把沿途遇见的人和事，慢慢说成自己的中国故事。</p></section>
