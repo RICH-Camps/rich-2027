@@ -1,3 +1,13 @@
+## Independent fallback restored: 2026-10-30
+
+https://2027.richcamps.com/ serves the ten itinerary pages directly on Vercel. It no longer redirects to SiteGround. `node build-standalone.mjs` builds `standalone-dist` from the source HTML and assets, rewriting only runtime asset paths and local itinerary navigation for the domain root. The four current Chinese font subsets and their stylesheet are bundled as `assets/standalone-20261030-*`; font licenses remain in `assets/optimized-20261013/`.
+
+Source HTML, canonical URLs, sitemap and structured data still identify the primary SiteGround itinerary pages. This is an availability fallback, not a new SEO migration. Vercel builds do not deploy SiteGround. Update the shared source and verify both deployments when changing itineraries. The independent version includes existing direct email/WhatsApp/WeChat contact controls; main-site fees/application links still require SiteGround and the family database is not mirrored.
+
+Vercel domain binding and Alibaba DNS were already correct and were not changed. Roll back by restoring the previous vercel.json from commit 9b20ec370e558ecebc29a4e8799bfa698fa4c8cc. Do not delete the Vercel project/domain or historical assets.
+
+The notes below describe earlier releases and are superseded by this section for Vercel hosting behavior.
+
 ## Production migration: 2026-10-24
 Canonical itineraries now live at https://www.richcamps.com/itineraries/2027/ on SiteGround. This GitHub repository remains the version-controlled source. Vercel and 2027.richcamps.com remain active as per-page permanent redirects; do not remove the project, domain or old versioned assets.
 Deploy HTML to rich-itinerary-content-20261024 outside public_html; public assets and isolated delivery routes live under public_html/itineraries/2027/. Main-site links and sitemap are deployed separately. No family database/config changes.
